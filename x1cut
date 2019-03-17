@@ -148,3 +148,22 @@ sollid um facilisis eleme quis, vulputat nec.
 
 
 <img src="images/pictures/calendar.png" alt="img" class="responsive-image">
+
+
+
+<p class="user-list-follow">
+<a href="#" class="followku">Cek update</a>
+</p>
+</div>
+</div>
+
+<div class="timeline-item timeline-ending">
+<div class="timeline-icon">
+<i class="fa fa-times"></i>
+</div>
+<div class="timeline-text no-bottom">
+<h3 class="title">Salam Literasi!</h3>
+<em class="subtitle">Jadikan buku Sahabatmu...</em>
+
+</div>
+</div>
