@@ -79,3 +79,72 @@ Membuat kartu anggota perpustakaan di Perpustakaan SMPN 21 Purworejo sangat muda
 <br/>
 <div class="decoration"></div>
 </div>
+
+
+
+<div class="content purechat-button-expand">
+<h3>Chat dengan Pustakawan</h3>
+<p>
+Notifikasi pesan kamu otomatis akan masuk ke HP Pustakawan. Pesanmu akan segera dibalas.
+</p>
+<em class="speach-left-title">Pustakawan SMPN 21 Purworejo</em>
+<p class="speach-left">Klik disini untuk mulai chat dengan pustakawan...</p>
+<div class="clear"></div>
+<em class="speach-right-title">Anda</em>
+<p class="speach-right blue-bubble">Ya! saya mengerti :)</p>
+<div class="clear"></div>
+<em class="speach-left-title">Pustakawan</em>
+<p class="speach-left">Terima kasih</p>
+<div class="clear"></div>
+</div>
+
+
+
+
+
+
+
+
+<div class="content">
+<h4>Berita Terbaru</h4><br/>
+<div class="portfolio-two">
+<div class="portfolio-two-item full-bottom">
+<div class="portfolio-two-image">
+<a href="images/pictures/3.jpg" class="swipebox" title="Caption Here">
+<i class="fa fa-plus"></i>
+</a>
+<img src="images/pictures/3.jpg" class="responsive-image">
+</div>
+<div class="portfolio-two-text">
+<h3 class="title">Portfolio Item</h3>
+<em class="subtitle">NEWS</em>
+<p class="half-bottom">
+Lorem ipsum dolor sit amet, consecte tur est adipiscing elit. Lacus
+sollid um facilisis eleme quis, vulputat nec.
+</p>
+</div>
+</div>
+<div class="portfolio-two-item full-bottom">
+<div class="portfolio-two-image">
+<a href="images/pictures/3.jpg" class="swipebox" title="Caption Here">
+<i class="fa fa-plus"></i>
+</a>
+<img src="images/pictures/3.jpg" class="responsive-image">
+</div>
+<div class="portfolio-two-text">
+<h3 class="title">Portfolio Item</h3>
+<em class="subtitle">NEWS</em>
+<p class="half-bottom">
+Lorem ipsum dolor sit amet, consecte tur est adipiscing elit. Lacus
+sollid um facilisis eleme quis, vulputat nec.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+jjj
