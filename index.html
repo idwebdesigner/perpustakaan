@@ -20,13 +20,22 @@
 <script>
 $(document).ready(function(){
 
-   $('#ambil').load("index-disv.html");
+   $('#ambil').load("http://app.smpn21purworejo.sch.id/index-diva.html");
 
 });
 </script>
 
 </head>
 <body>
+
+<div style="background-color: transparent" id="preloader">
+<div id="status">
+<p class="center-text">
+Perpustakaan TOP (Twenty One Purworejo)
+<em>SMPN 21 Purworejo</em>
+</p>
+</div>
+</div>
 
 <div class="header">
 <a class="header-logo" href="index.html"></a>
@@ -70,9 +79,9 @@ $(document).ready(function(){
 <div class="menu-background"></div>
 
 <div id ="ambil">
-<div class="detected-wrapper">
-<h4>Periksa koneksi Internet anda</h4>
-<em>Tidak dapat menerima pembaruan</em>
+<div style="opacity: 0.3;" class="detected-wrapper">
+<h4>Tidak dapat memuat konten</h4>
+<em>Periksa koneksi Internet anda</em>
 
 </div>
 </div>
