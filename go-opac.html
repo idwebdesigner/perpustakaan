@@ -16,6 +16,14 @@
 <script type="text/javascript" src="scripts/jqueryui.js"></script>
 <script type="text/javascript" src="scripts/framework.plugins.js"></script>
 <script type="text/javascript" src="scripts/custom.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+   $('#ambil').load("go-opac-div.html");
+
+});
+</script>
 </head>
 <body>
 <div id="preloader">
@@ -62,26 +70,7 @@
 </div>
 <div class="menu-background"></div>
 
-<div class="content">
-<div class="container no-bottom">
-<div class="one-half-responsive">
-<div class="android-detected">
-<div class="detected-wrapper">
-<img class="detected-image" src="images/21.jpg" alt="img">
-<h4>Online Public Access Catalog</h4>
-<em>Perpustakaan SMPN 21 Purworejo</em>
-<p>
-Anda akan dialihkan dari aplikasi ke Katalog Online Perpustakaan (OPAC).
-</p>
-<a href="http://smpn21purworejo.sch.id/library/app.php" class="round-button button-red center-button">Akses OPAC</a>
-<br/>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
+<div id ="ambil"> </div>
 
 </div>
 

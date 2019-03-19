@@ -16,6 +16,14 @@
 <script type="text/javascript" src="scripts/jqueryui.js"></script>
 <script type="text/javascript" src="scripts/framework.plugins.js"></script>
 <script type="text/javascript" src="scripts/custom.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+   $('#ambil').load("chat-div.html");
+
+});
+</script>
 </head>
 <body>
 <div id="preloader">
@@ -62,22 +70,7 @@
 </div>
 <div class="menu-background"></div>
 
-
-
-<div class="content">
-<em class="speach-left-title">Pustakawan SMPN 21 Purworejo</em>
-<p class="speach-left">Klik tombol berikut untuk mulai chat...</p>
-<br/><br/><br/><br/>
-<a style="margin-top: -50px;" class="round-button button-red purechat-button-expand">Mulai Chat</a>
-
-<div class="clear"></div>
-<em class="speach-right-title">Anda</em>
-<p class="speach-right blue-bubble">Ya! saya mengerti :)</p>
-<div class="clear"></div>
-<em class="speach-left-title">Pustakawan</em>
-<p class="speach-left">Terima kasih</p>
-<div class="clear"></div>
-</div>
+<div id ="ambil"> </div>
 
 </div>
 <div class="share-bottom">
