@@ -34,9 +34,9 @@ $(document).ready(function(){
 </div>
 
 <div class="header">
-<a class="header-logo" href="index.html"></a>
+<a class="header-logo" href="index.html" onClick="hideLoader()"></a>
 <div class="header-icons">
-<a class="bg-white" href="login.html"><i style="color: black" class="fa fa-user"></i></a>
+<a class="bg-white" href="login.html" onClick="hideLoader()"><i style="color: black" class="fa fa-user"></i></a>
 <a class="bg-red2 show-share-bottom" href="#"><i class="fa fa-share-alt"></i></a>
 <a class="bg-red2" href="chat.html"><i class="fa fa-comments"></i></a>
 </div>
@@ -45,29 +45,29 @@ $(document).ready(function(){
 <div class="header-clear"></div>
 
 <div class="footer-menu">
-<a href="#" class="footer-menu-open">
+<a href="#" onClick="hideLoader()" class="footer-menu-open">
 <i class="fa fa-navicon bg-red2"></i>
 </a>
-<a href="#" class="footer-menu-close">
+<a href="#" onClick="hideLoader()" class="footer-menu-close">
 <i class="fa fa-times bg-red1"></i>
 </a>
-<a href="karya.html" class="footer-menu-item fm-1">
+<a href="karya.html" onClick="hideLoader()" class="footer-menu-item fm-1">
 <em>Karya Tulis</em>
 <i class="fa fa-file bg-red2"></i>
 </a>
-<a href="galeri.html" class="footer-menu-item fm-2">
+<a href="galeri.html" onClick="hideLoader()" class="footer-menu-item fm-2">
 <em>Galeri</em>
 <i class="fa fa-image bg-red2"></i>
 </a>
-<a href="biblio.html" class="footer-menu-item fm-3">
+<a href="biblio.html" onClick="hideLoader()" class="footer-menu-item fm-3">
 <em>Biblio Club</em>
 <i class="fa fa-user bg-red2"></i>
 </a>
-<a href="agenda.html" class="footer-menu-item fm-4">
+<a href="agenda.html" onClick="hideLoader()" class="footer-menu-item fm-4">
 <em>Agenda Kegiatan</em>
 <i class="fa fa-calendar bg-red2"></i>
 </a>
-<a href="index.html" class="footer-menu-item fm-5">
+<a href="index.html" onClick="hideLoader()" class="footer-menu-item fm-5">
 <em>Beranda</em>
 <i class="fa fa-home bg-red2"></i>
 </a>
@@ -75,38 +75,53 @@ $(document).ready(function(){
 <div class="menu-background"></div>
 
 <div id ="ambil">
-<div style="opacity: 0.3;" class="detected-wrapper">
+<div style="opacity: 0.7;">
+
+<div class="content">
+<div class="android-detected">
+<div class="detected-wrapper">
+<img style="width:90%; height: auto; margin-bottom: 30px;" src="images/pictures/adventure.jpg" class="responsive-image">
 <h4>Tidak dapat memuat konten</h4>
 <em>Periksa koneksi Internet anda</em>
+</div>
+</div>
+</div>
 
 </div>
 </div>
 
+<script type="text/javascript" src="scripts/script.js"></script>
+
+<script type="text/javascript">
+        function hideLoader() {
+            android.hideLoader();
+        }
+    </script>
 
 <div class="share-bottom">
 <h3>Bagikan Aplikasi</h3>
 <div class="share-socials-bottom">
-<a href="https://www.facebook.com/sharer/sharer.php?u=http://www.themeforest.net/">
+<a href="https://www.facebook.com/sharer/sharer.php?u=http://spn21purworejo.sch.id">
 <i class="fa fa-facebook facebook-color"></i>
 Facebook
 </a>
-<a href="https://twitter.com/home?status=Check%20out%20ThemeForest%20http://www.themeforest.net">
+<a href="https://twitter.com/home?status=Check%20Perpustakaan%20TOP%20http://spn21purworejo.sch.id">
 <i class="fa fa-twitter twitter-color"></i>
 Twitter
 </a>
-<a href="https://plus.google.com/share?url=http://www.themeforest.net">
+<a href="https://plus.google.com/share?url=http://spn21purworejo.sch.id">
 <i class="fa fa-google-plus google-color"></i>
 Google
 </a>
-<a href="https://pinterest.com/pin/create/button/?url=http://www.themeforest.net/&amp;media=https://0.s3.envato.com/files/63790821/profile-image.jpg&amp;description=Themes%20and%20Templates">
+<a href="https://pinterest.com/pin/create/button/?url=http://spn21purworejo.sch.id">
 <i class="fa fa-pinterest-p pinterest-color"></i>
 Pinterest
 </a>
-<a href="whatsapp://send?text=The text to share!" data-action="share/whatsapp/share">
+<a href="whatsapp://send?text=Perpustakaan TOP http://spn21purworejo.sch.id" data-action="share/whatsapp/share">
 <i class="fa fa-comment-o sms-color"></i>
 Whatsapp
 </a>
-<a href="mailto:?&subject=Check this page out!&body=http://www.themeforest.net">
+<a href="mailto:?&subject=Check this page out!&body=http://spn21purworejo.sch.id">
 <i class="fa fa-envelope-o mail-color"></i>
 Email
 </a>
