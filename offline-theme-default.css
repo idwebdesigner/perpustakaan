@@ -12,7 +12,7 @@
   background: white;
   z-index: 2000;
   margin: auto;
-  top: 100px;
+  top: 0;
   left: 0;
   right: 0;
 }
@@ -316,10 +316,10 @@
   -o-border-radius: 4px;
   border-radius: 4px;
   font-family: "Helvetica Neue", sans-serif;
-  padding: 1em;
+  padding-top: 90px;
   top: 1em;
   width: 38em;
-  max-width: 80%;
+  max-width: 90%;
   overflow: hidden;
 }
 @media (max-width: 38em) {
