@@ -12,7 +12,7 @@
   background: white;
   z-index: 2000;
   margin: auto;
-  top: 0;
+  top: 100px;
   left: 0;
   right: 0;
 }
