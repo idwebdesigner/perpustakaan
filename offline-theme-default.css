@@ -319,7 +319,7 @@
   padding: 1em;
   top: 1em;
   width: 38em;
-  max-width: 100%;
+  max-width: 80%;
   overflow: hidden;
 }
 @media (max-width: 38em) {
