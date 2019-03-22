@@ -1,27 +1,23 @@
-body {
-  font-size: 24px;
-  font-family: 'Source Sans Pro', sans-serif;
-}
 .timezone {
   position: relative;
   overflow: hidden;
   padding: 0.2em 0;
-  margin: 0 1em;
-  border-bottom: solid 1px black;
+  margin: 0 0em;
+  border-bottom: solid 1px #E7E7E7;
 }
 .timezone attr {
   font-size: 0.9em;
 }
 .timezone__location {
   margin: 0;
-  font-size: 2.8em;
+  font-size: 1.7em;
   font-weight: 200;
 }
 .time {
   position: absolute;
   right: 0;
   top: 14px;
-  font-size: 3.4em;
+  font-size: 1.25em;
   font-weight: 200;
 }
 .time small {

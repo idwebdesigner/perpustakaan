@@ -1,43 +1,39 @@
 var timezones = [
   {
-    name: 'Seattle',
-    timezone: 'America/Los_Angeles'
+    name: 'Singapura',
+    timezone: 'Asia/Singapore'
   },
   {
-    name: 'Chicago',
-    timezone: 'America/Chicago'
+    name: 'Tokyo, Jepang',
+    timezone: 'Asia/Tokyo'
   },
   {
-    name: 'Montreal',
-    timezone: 'America/Montreal'
+    name: 'Roma, Italia',
+    timezone: 'Europe/Rome'
   },
   {
-    name: 'London',
+    name: 'Jakarta, Indonesia',
+    timezone: 'Asia/Jakarta'
+  },
+  {
+    name: 'London, Inggris',
     timezone: 'Europe/London'
   },
   {
-    name: 'Gurgaon',
-    timezone: 'Asia/Kolkata'
+    name: 'Seoul, Korea Selatan',
+    timezone: 'Asia/Seoul'
   },
   {
-    name: 'Shenzhen',
-    timezone: 'Asia/Shanghai'
+    name: 'New York, USA',
+    timezone: 'America/New_York'
   },
-  {
-    name: 'Brisbane',
-    timezone: 'Australia/Brisbane'
-  },
-  {
-    name: 'Sydney',
-    timezone: 'Australia/Sydney'
-  }
 ];
 
 var template = $('#timezone').html();
 Mustache.parse(template);
 
 var display = function() {
-  var content = $('#content');
+  var content = $('#waktu');
   content.empty();
   for(var i = 0; i < timezones.length; i++) {
     var tz = timezones[i];

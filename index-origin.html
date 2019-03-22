@@ -18,6 +18,7 @@
 <script type="text/javascript" src="scripts/framework.plugins.js"></script>
 <script type="text/javascript" src="scripts/custom.js"></script>
 <script type="text/javascript" src="scripts/offline.min.js"></script>
+<link rel="stylesheet" href="styles/worldclock.css">
 </head>
 <body>
 <div id="preloader">
@@ -111,6 +112,18 @@ Jadikan Buku Sahabatmu!
 <a href="agenda.html" class="followkita">Hubungi kami</a>&nbsp;&nbsp;Permintaan pengadaan buku
 </p>
 </div>
+
+<div class="content">
+<p class="user-list-follow">
+<img src="images/pictures/world.png" alt="img">
+<strong>Jam Dunia<br><em>Waktu kota-kota di dunia</em></strong>
+<a href="#" class="follow" style="background-color: #c0392b">Follow</a>
+</p>
+<div id="waktu"></div>
+</div>
+
+
+
 
 <br/><br/>
 
@@ -290,5 +303,17 @@ Email
 </div>
 <a href="#" class="close-share-bottom">Tutup</a>
 </div>
+<script type="text/template" id="timezone">
+<div class="timezone">
+  <div class="time" id="time-{{name}}">{{time}}</div>
+  <h1 class="timezone__location">{{name}}</h1>
+  <attr><strong>{{when}}</strong></attr>
+</div>
+</script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://momentjs.com/downloads/moment.min.js'></script>
+<script src='https://momentjs.com/downloads/moment-timezone-with-data-2012-2022.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js'></script>
+<script  src="scripts/worldclock.js"></script>
 
 </body>
