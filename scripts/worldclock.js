@@ -1,13 +1,5 @@
 var timezones = [
   {
-    name: 'Singapura',
-    timezone: 'Asia/Singapore'
-  },
-  {
-    name: 'Tokyo, Jepang',
-    timezone: 'Asia/Tokyo'
-  },
-  {
     name: 'Roma, Italia',
     timezone: 'Europe/Rome'
   },
