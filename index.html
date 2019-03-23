@@ -25,6 +25,13 @@ $(document).ready(function(){
 
 });
 </script>
+<script>
+$(document).ready(function(){
+
+   $('#bagikan').load("http://app.smpn21purworejo.sch.id/bagikan-div.html");
+
+});
+</script>
 <script type="text/javascript" src="offline.min.js"></script>
 <link href="offline-theme-default.css" rel="stylesheet" type="text/css">
 
@@ -98,35 +105,9 @@ $(document).ready(function(){
     </script>
 
 <div class="share-bottom">
-<h3>Bagikan Aplikasi</h3>
-<div class="share-socials-bottom">
-<a href="https://www.facebook.com/sharer/sharer.php?u=http://spn21purworejo.sch.id">
-<i class="fa fa-facebook facebook-color"></i>
-Facebook
-</a>
-<a href="https://twitter.com/home?status=Check%20Perpustakaan%20TOP%20http://spn21purworejo.sch.id">
-<i class="fa fa-twitter twitter-color"></i>
-Twitter
-</a>
-<a href="https://plus.google.com/share?url=http://spn21purworejo.sch.id">
-<i class="fa fa-google-plus google-color"></i>
-Google
-</a>
-<a href="https://pinterest.com/pin/create/button/?url=http://spn21purworejo.sch.id">
-<i class="fa fa-pinterest-p pinterest-color"></i>
-Pinterest
-</a>
-<a href="whatsapp://send?text=Perpustakaan TOP http://spn21purworejo.sch.id" data-action="share/whatsapp/share">
-<i class="fa fa-comment-o sms-color"></i>
-Whatsapp
-</a>
-<a href="mailto:?&subject=Check this page out!&body=http://spn21purworejo.sch.id">
-<i class="fa fa-envelope-o mail-color"></i>
-Email
-</a>
+<div id ="ambil"></div>
 </div>
-<a href="#" class="close-share-bottom">Tutup</a>
-</div>
+
 <script type="text/template" id="timezone">
 <div class="timezone">
   <div class="time" id="time-{{name}}">{{time}}</div>
