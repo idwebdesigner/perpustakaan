@@ -16,6 +16,12 @@
 <script type="text/javascript" src="scripts/jqueryui.js"></script>
 <script type="text/javascript" src="scripts/framework.plugins.js"></script>
 <script type="text/javascript" src="scripts/custom.js"></script>
+<script type="text/javascript" src='scripts/jquery.min.js'></script>
+<script type="text/javascript" src='scripts/moment.min.js'></script>
+<script type="text/javascript" src='scripts/moment-timezone-with-data-2012-2022.js'></script>
+<script type="text/javascript" src='scripts/mustache.min.js'></script>
+<script type="text/javascript" src="scripts/worldclock.js"></script>
+<link rel="stylesheet" href="styles/worldclock.css">
 </head>
 <body>
 
@@ -66,29 +72,22 @@
 </div>
 <div class="menu-background"></div>
 
-<div class="content">
-<div class="container no-bottom">
-<div class="one-half-responsive">
-<div class="android-detected">
-<div class="detected-wrapper">
-<img class="detected-image" src="images/detector/android.png" alt="img">
-<h4>Fitur saat ini belum tersedia</h4>
-<em>Periksa pembaruan Aplikasi</em>
-<p>
-Untuk pelayanan yang lebih baik, aplikasi akan selalu diperbarui dengan menambahkan beberapa fitur dan perbaikan lainnya.
+<div class="content" style="margin-top: -20px; margin-bottom: -20px;">
+<div class="portfolio-one-item full-bottom">
+<div class="portfolio-one-text">
+<h3 class="title">Waktu kota-kota besar di dunia</h3>
+<p class="half-bottom">
+Jadikan Buku Sahabatmu!
 </p>
-<a href="https://play.google.com/store/apps/details?id=id.web.designer.perpus" class="round-button button-red center-button">Cek Update</a>
-<br/>
 </div>
-</div>
-
 </div>
 </div>
 
+<div class="content">
+<div id="waktu"></div>
 </div>
 
 </div>
-
 
 <div class="share-bottom">
 <h3>Bagikan Aplikasi</h3>
@@ -108,4 +107,12 @@ Email
 </div>
 <a href="#" class="close-share-bottom">Tutup</a>
 </div>
+
+<script type="text/template" id="timezone">
+<div class="timezone">
+  <div class="time" id="time-{{name}}">{{time}}</div>
+  <h1 class="timezone__location">{{name}}</h1>
+  <attr><strong>{{when}}</strong></attr>
+</div>
+</script>
 </body>
