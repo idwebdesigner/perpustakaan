@@ -16,10 +16,14 @@
 <script type="text/javascript" src="scripts/jqueryui.js"></script>
 <script type="text/javascript" src="scripts/framework.plugins.js"></script>
 <script type="text/javascript" src="scripts/custom.js"></script>
-<script type="text/javascript" src='scripts/jquery.min.js'></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-<link rel="stylesheet" href="styles/analog.css">
-<script  src="scripts/analog.js"></script>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+   $('#ambil').load("index-s-div.html");
+
+});
+</script>
 </head>
 <body>
 
@@ -28,7 +32,6 @@
 </div>
 </div>
 
-<div class="all-elements">
 <div class="header">
 <a class="header-logo" href="index.html"></a>
 <div class="header-icons">
@@ -70,12 +73,16 @@
 </div>
 <div class="menu-background"></div>
 
-
-
-<div style="margin-top:-35px;padding:0px;overflow:hidden">
-<iframe src="http://app.smpn21purworejo.sch.id/v1/waktu-origin.html" frameborder="0" style="overflow:hidden;height:2000px;width:100%" height="100%" width="100%"></iframe>
+<div id ="ambil">
+<div class="content">
+<div class="android-detected">
+<div class="detected-wrapper">
+<img style="width:90%; height: auto; margin-bottom: 30px;" src="images/pictures/adventure.jpg" class="responsive-image">
+<h4>Tidak dapat memuat konten</h4>
+<em>Periksa koneksi Internet anda</em>
 </div>
-
+</div>
+</div>
 </div>
 
 <div class="share-bottom">
@@ -106,5 +113,4 @@ Play Store
 
 <a href="#" class="close-share-bottom">Tutup</a>
 </div>
-
 </body>
