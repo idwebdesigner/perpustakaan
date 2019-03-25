@@ -16,11 +16,10 @@
 <script type="text/javascript" src="scripts/jqueryui.js"></script>
 <script type="text/javascript" src="scripts/framework.plugins.js"></script>
 <script type="text/javascript" src="scripts/custom.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
 
-   $('#ambil').load("http://app.smpn21purworejo.sch.id/chat-div.html");
+   $('#ambil').load("http://app.smpn21purworejo.sch.id/v1/onesignal-div.html");
 
 });
 </script>
@@ -72,14 +71,7 @@ $(document).ready(function(){
 <i class="fas fa-blog bg-red2"></i>
 </a>
 </div>
-
-<div class="content" style="margin-top: -20px; margin-bottom: -20px;">
-<div class="portfolio-one-item full-bottom">
-<div class="portfolio-one-text">
-<h3 class="title">Chat dengan Pustakawan</h3><br/>
-</div>
-</div>
-</div>
+<div class="menu-background"></div>
 
 <div id ="ambil">
 <div class="content">
@@ -92,18 +84,19 @@ $(document).ready(function(){
 </div>
 </div>
 </div>
+
 </div>
 
 <div class="share-bottom">
 <h3>Bagikan Aplikasi</h3>
 
 <div class="content">
-<p style="text-align: center;">Bagikan dan beri penilaian (<i style="color: orange" class="fas fa-star"></i><i style="color: orange" class="fas fa-star"></i><i style="color: orange" class="fas fa-star"></i><i style="color: orange" class="fas fa-star"></i><i style="color: orange" class="fas fa-star"></i>)<br/>positif di Google <i class="fab fa-google-play"></i> Play Store</p>
+<p style="text-align: center;margin-bottom: 10px;">Bagikan dan beri penilaian (<i style="color: orange" class="fas fa-star"></i><i style="color: orange" class="fas fa-star"></i><i style="color: orange" class="fas fa-star"></i><i style="color: orange" class="fas fa-star"></i><i style="color: orange" class="fas fa-star"></i>)<br/>positif di Google <i class="fab fa-google-play"></i> Play Store</p>
 </div>
 
 <div class="share-socials-bottom">
 
-<a href="whatsapp://send?text=https://play.google.com/store/apps/details?id=id.web.designer.perpus" data-action="share/whatsapp/share">
+<a href="whatsapp://send?text=http://app.smpn21purworejo.sch.id" data-action="share/whatsapp/share">
 <i class="fab fa-whatsapp google-color"></i>
 Whatsapp
 </a>
@@ -122,7 +115,4 @@ Play Store
 
 <a href="#" class="close-share-bottom">Tutup</a>
 </div>
-
-<script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '114975bb-2b0d-473b-94c2-adb122a5e474', f: true }); done = true; } }; })();</script>
-
 </body>
