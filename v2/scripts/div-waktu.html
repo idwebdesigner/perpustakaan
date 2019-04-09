@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>HTML World Clock</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+
+      <link rel="stylesheet" href="styles/analog.css">
+
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+        <div class="demo">
+            <div class="clock">
+                <div class="needle">
+                    <span class="minutes"></span>
+                    <span class="hours"></span>
+                    <span class="seconds"></span>
+                </div>
+
+                <ul class="time-number">
+                    <li><span>1</span></li>
+                    <li><span>2</span></li>
+                    <li><span>3</span></li>
+                    <li><span>4</span></li>
+                    <li><span>5</span></li>
+                    <li><span>6</span></li>
+                    <li><span>7</span></li>
+                    <li><span>8</span></li>
+                    <li><span>9</span></li>
+                    <li><span>10</span></li>
+                    <li><span>11</span></li>
+                    <li><span>12</span></li>
+                </ul>
+
+                <div class="apm"></div>
+            </div>
+            <h4>Indonesia</h4>
+        </div>
+        <div class="demo">
+            <div class="clock" data-timezone="America/New_York">
+                <div class="needle">
+                    <span class="minutes"></span>
+                    <span class="hours"></span>
+                    <span class="seconds"></span>
+                </div>
+
+                <ul class="time-number">
+                    <li><span>1</span></li>
+                    <li><span>2</span></li>
+                    <li><span>3</span></li>
+                    <li><span>4</span></li>
+                    <li><span>5</span></li>
+                    <li><span>6</span></li>
+                    <li><span>7</span></li>
+                    <li><span>8</span></li>
+                    <li><span>9</span></li>
+                    <li><span>10</span></li>
+                    <li><span>11</span></li>
+                    <li><span>12</span></li>
+                </ul>
+
+                <div class="apm"></div>
+            </div>
+            <h4>New York</h4>
+        </div>
+        <div class="demo">
+            <div class="clock" data-timezone="Europe/London">
+                <div class="needle">
+                    <span class="minutes"></span>
+                    <span class="hours"></span>
+                    <span class="seconds"></span>
+                </div>
+
+                <ul class="time-number">
+                    <li><span>1</span></li>
+                    <li><span>2</span></li>
+                    <li><span>3</span></li>
+                    <li><span>4</span></li>
+                    <li><span>5</span></li>
+                    <li><span>6</span></li>
+                    <li><span>7</span></li>
+                    <li><span>8</span></li>
+                    <li><span>9</span></li>
+                    <li><span>10</span></li>
+                    <li><span>11</span></li>
+                    <li><span>12</span></li>
+                </ul>
+
+                <div class="apm"></div>
+            </div>
+            <h4>London</h4>
+        </div>
+        <div class="demo">
+            <div class="clock" data-timezone="Australia/Sydney">
+                <div class="needle">
+                    <span class="minutes"></span>
+                    <span class="hours"></span>
+                    <span class="seconds"></span>
+                </div>
+
+                <ul class="time-number">
+                    <li><span>1</span></li>
+                    <li><span>2</span></li>
+                    <li><span>3</span></li>
+                    <li><span>4</span></li>
+                    <li><span>5</span></li>
+                    <li><span>6</span></li>
+                    <li><span>7</span></li>
+                    <li><span>8</span></li>
+                    <li><span>9</span></li>
+                    <li><span>10</span></li>
+                    <li><span>11</span></li>
+                    <li><span>12</span></li>
+                </ul>
+
+                <div class="apm"></div>
+            </div>
+            <h4>Sydney</h4>
+        </div>
+        <div class="demo">
+            <div class="clock" data-timezone="Asia/Hong_Kong">
+                <div class="needle">
+                    <span class="minutes"></span>
+                    <span class="hours"></span>
+                    <span class="seconds"></span>
+                </div>
+
+                <ul class="time-number">
+                    <li><span>1</span></li>
+                    <li><span>2</span></li>
+                    <li><span>3</span></li>
+                    <li><span>4</span></li>
+                    <li><span>5</span></li>
+                    <li><span>6</span></li>
+                    <li><span>7</span></li>
+                    <li><span>8</span></li>
+                    <li><span>9</span></li>
+                    <li><span>10</span></li>
+                    <li><span>11</span></li>
+                    <li><span>12</span></li>
+                </ul>
+
+                <div class="apm"></div>
+            </div>
+            <h4>Hong Kong</h4>
+        </div>
+        <div class="demo">
+            <div class="clock" data-timezone="America/Cuiaba">
+                <div class="needle">
+                    <span class="minutes"></span>
+                    <span class="hours"></span>
+                    <span class="seconds"></span>
+                </div>
+
+                <ul class="time-number">
+                    <li><span>1</span></li>
+                    <li><span>2</span></li>
+                    <li><span>3</span></li>
+                    <li><span>4</span></li>
+                    <li><span>5</span></li>
+                    <li><span>6</span></li>
+                    <li><span>7</span></li>
+                    <li><span>8</span></li>
+                    <li><span>9</span></li>
+                    <li><span>10</span></li>
+                    <li><span>11</span></li>
+                    <li><span>12</span></li>
+                </ul>
+
+                <div class="apm"></div>
+            </div>
+            <h4>Brazil, Cuiaba</h4>
+        </div>
+        <br /><br />
+        <div class="demo">
+            <div class="clock" data-timezone="Asia/Dubai">
+                <div class="needle">
+                    <span class="minutes"></span>
+                    <span class="hours"></span>
+                    <span class="seconds"></span>
+                </div>
+
+                <ul class="time-number">
+                    <li><span>1</span></li>
+                    <li><span>2</span></li>
+                    <li><span>3</span></li>
+                    <li><span>4</span></li>
+                    <li><span>5</span></li>
+                    <li><span>6</span></li>
+                    <li><span>7</span></li>
+                    <li><span>8</span></li>
+                    <li><span>9</span></li>
+                    <li><span>10</span></li>
+                    <li><span>11</span></li>
+                    <li><span>12</span></li>
+                </ul>
+
+                <div class="apm"></div>
+            </div>
+            <h4>Dubai</h4>
+        </div>
+        <div class="demo">
+            <div class="clock" data-timezone="Asia/Karachi">
+                <div class="needle">
+                    <span class="minutes"></span>
+                    <span class="hours"></span>
+                    <span class="seconds"></span>
+                </div>
+
+                <ul class="time-number">
+                    <li><span>1</span></li>
+                    <li><span>2</span></li>
+                    <li><span>3</span></li>
+                    <li><span>4</span></li>
+                    <li><span>5</span></li>
+                    <li><span>6</span></li>
+                    <li><span>7</span></li>
+                    <li><span>8</span></li>
+                    <li><span>9</span></li>
+                    <li><span>10</span></li>
+                    <li><span>11</span></li>
+                    <li><span>12</span></li>
+                </ul>
+
+                <div class="apm"></div>
+            </div>
+            <h4>Pakistan</h4>
+        </div>
+        <div class="demo">
+            <div class="clock" data-timezone="Asia/Tokyo">
+                <div class="needle">
+                    <span class="minutes"></span>
+                    <span class="hours"></span>
+                    <span class="seconds"></span>
+                </div>
+
+                <ul class="time-number">
+                    <li><span>1</span></li>
+                    <li><span>2</span></li>
+                    <li><span>3</span></li>
+                    <li><span>4</span></li>
+                    <li><span>5</span></li>
+                    <li><span>6</span></li>
+                    <li><span>7</span></li>
+                    <li><span>8</span></li>
+                    <li><span>9</span></li>
+                    <li><span>10</span></li>
+                    <li><span>11</span></li>
+                    <li><span>12</span></li>
+                </ul>
+
+                <div class="apm"></div>
+            </div>
+            <h4>Tokyo</h4>
+        </div>
+        <div class="demo">
+            <div class="clock" data-timezone="Europe/Moscow">
+                <div class="needle">
+                    <span class="minutes"></span>
+                    <span class="hours"></span>
+                    <span class="seconds"></span>
+                </div>
+
+                <ul class="time-number">
+                    <li><span>1</span></li>
+                    <li><span>2</span></li>
+                    <li><span>3</span></li>
+                    <li><span>4</span></li>
+                    <li><span>5</span></li>
+                    <li><span>6</span></li>
+                    <li><span>7</span></li>
+                    <li><span>8</span></li>
+                    <li><span>9</span></li>
+                    <li><span>10</span></li>
+                    <li><span>11</span></li>
+                    <li><span>12</span></li>
+                </ul>
+
+                <div class="apm"></div>
+            </div>
+            <h4>Russia, Moscow</h4>
+        </div>
+        <div class="demo">
+            <div class="clock" data-timezone="Europe/Berlin">
+                <div class="needle">
+                    <span class="minutes"></span>
+                    <span class="hours"></span>
+                    <span class="seconds"></span>
+                </div>
+
+                <ul class="time-number">
+                    <li><span>1</span></li>
+                    <li><span>2</span></li>
+                    <li><span>3</span></li>
+                    <li><span>4</span></li>
+                    <li><span>5</span></li>
+                    <li><span>6</span></li>
+                    <li><span>7</span></li>
+                    <li><span>8</span></li>
+                    <li><span>9</span></li>
+                    <li><span>10</span></li>
+                    <li><span>11</span></li>
+                    <li><span>12</span></li>
+                </ul>
+
+                <div class="apm"></div>
+            </div>
+            <h4>Berlin</h4>
+        </div>
+        <div class="demo">
+            <div class="clock" data-timezone="Africa/Johannesburg">
+                <div class="needle">
+                    <span class="minutes"></span>
+                    <span class="hours"></span>
+                    <span class="seconds"></span>
+                </div>
+
+                <ul class="time-number">
+                    <li><span>1</span></li>
+                    <li><span>2</span></li>
+                    <li><span>3</span></li>
+                    <li><span>4</span></li>
+                    <li><span>5</span></li>
+                    <li><span>6</span></li>
+                    <li><span>7</span></li>
+                    <li><span>8</span></li>
+                    <li><span>9</span></li>
+                    <li><span>10</span></li>
+                    <li><span>11</span></li>
+                    <li><span>12</span></li>
+                </ul>
+
+                <div class="apm"></div>
+            </div>
+            <h4>Johannesburg</h4>
+        </div>
+
+    </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+
+
+
+    <script  src="scripts/analog.js"></script>
+
+
+
+
+</body>
+
+</html>
