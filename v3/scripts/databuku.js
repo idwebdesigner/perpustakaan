@@ -5,7 +5,7 @@ var search = null;
   var $searchbar = $('#search');
 
   var dex = [{
-    name: 'Bulbasaur',
+    name: '<a href="index.html">Lebih Cerdas dengan Wikipedia</a>',
     nat: '#001',
     index: 1,
     cat: 'Seed',
@@ -241,11 +241,11 @@ var search = null;
       $res.append('<h4 class="rip">Tidak ditemukan</h4><h6>Penelusuran anda tidak ada di Perpustakaan</h6><p>Saran: Pastikan semua kata dieja dengan benar, coba kata kunci yang lain, atau coba kata kunci yang lebih umum.</p>');
     }
     $res.append('<h4>Apakah maksud anda: ' + search[0].name + '?</h4>');
-    $res.append('<h5>Pencarian semua buku:</h5>');
+    $res.append('<h5>Hasil pencarian:</h5>');
 
     search.forEach(function(el){
       $res.append(
-        el.nat + ': ' + el.name + ' (' + el.typing + ') <br>'
+        el.nat + ': ' + el.name + ' (' + el.typing + ') <br><br>'
       );
     });
   });
