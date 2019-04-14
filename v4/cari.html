@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>Perpustakaan TOP SMPN 21 Purworejo</title>
+<link href="styles/style.css" rel="stylesheet" type="text/css">
+<link href="styles/menu.css" rel="stylesheet" type="text/css">
+<link href="styles/framework.css" rel="stylesheet" type="text/css">
+<link href="styles/all.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<style>
+.search-container{
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+input#search{
+  margin: 0 auto;
+  width: 100%;
+  height: 45px;
+  padding: 0 20px;
+  border-radius: 0px;
+
+  font-size: 1rem;
+  border: 1px solid #D0CFCE;
+  outline: none;
+  &:focus{
+    border: 1px solid #008ABF;
+    transition: 0.35s ease;
+    color: #008ABF;
+    &::-webkit-input-placeholder{
+      transition: opacity 0.45s ease;
+  	  opacity: 0;
+     }
+    &::-moz-placeholder {
+      transition: opacity 0.45s ease;
+  	  opacity: 0;
+     }
+    &:-ms-placeholder {
+     transition: opacity 0.45s ease;
+  	 opacity: 0;
+     }
+   }
+ }
+</style>
+
+<script>
+$(document).ready(function(){
+
+   $('#ambil').load("div-literasi.html");
+
+});
+</script>
+</head>
+<body>
+
+<div style="background-color: transparent" id="preloader">
+<div id="status">
+</div>
+</div>
+
+
+<div class="header-top"></div>
+
+<ul class="footer-controls five-controls">
+<li><a href="index.html"> <i class="fas fa-home"></i></a></li>
+<li><a href="berita.html"> <i class="fas fa-bullhorn"></i></a></li>
+<li><a href="cari.html"> <i style="color: red" class="fas fa-search"></i></a></li>
+<li><a href="forum.html"> <i class="fas fa-comments"></i></a></li>
+<li><a href="biblio.html"> <i class="fas fa-book-reader"></i></a></li>
+</ul>
+
+<div class="content" style="margin-top: -20px; margin-bottom: -20px;">
+<div class="portfolio-one-item full-bottom">
+<div class="portfolio-one-text">
+<h3 class="title">Katalog Online Perpustakaan</h3>
+<p class="half-bottom">
+Sistem Manajemen Perpustakaan
+</p>
+</div>
+</div>
+</div>
+
+<div class="content">
+  <div class="container">
+  <div class="row">
+    <div class="col s12">
+      <div class="input-field">
+        <input type="text" id="search" autocomplete="off" placeholder="Pencarian...">
+        <label style="margin-top: 10px;" for="search">Masukkan kata kunci judul, pengarang, atau penerbit</label>
+      </div>
+    </div>
+
+    <!-- Results --><br/>
+    <div id="results" class="flow-text col s12">Akses informasi koleksi buku Perpustakaan SMPN 21 Purworejo dengan Online Public Access Catalog (OPAC)</div>
+  </div>
+  </div>
+</div>
+
+<script src='scripts/materialize.min.js'></script>
+<script src='scripts/fuse.min.js'></script>
+<script  src="http://app.smpn21purworejo.sch.id/v3/scripts/databuku.js"></script>
+<script  src=""></script>
+
+<div class="bawah"></div>
+</body>
