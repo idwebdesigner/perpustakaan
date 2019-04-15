@@ -78,12 +78,27 @@ input#search{
 			height: 10px;
 		}
 	</style>
-<script>$(document).ready(function(){$('#ambil1').load("div-k1.html");});</script>
-<script>$(document).ready(function(){$('#ambil2').load("div-k2.html");});</script>
-<script>$(document).ready(function(){$('#ambil3').load("div-k3.html");});</script>
-<script>$(document).ready(function(){$('#divliterasi').load("div-literasi.html");});</script>
-<script>$(document).ready(function(){$('#divantologi').load("div-antologi.html");});</script>
+<script>
+$(document).ready(function(){
 
+   $('#ambil1').load("div-k1.html");
+
+});
+</script>
+<script>
+$(document).ready(function(){
+
+   $('#ambil2').load("div-k2.html");
+
+});
+</script>
+<script>
+$(document).ready(function(){
+
+   $('#ambil3').load("div-k3.html");
+
+});
+</script>
 <script>
 function dark_toggle() {
     var el1 = document.getElementById("dark-reader");
@@ -178,15 +193,10 @@ function dark_toggle() {
 </div>
 </div>
 
-<div id="app">
-  <transition name="page" :duration="1300">
-    <div class="page" :is="page" @change-page="onChangePage"></div>
-  </transition>
-</div>
 
-<script id="start" type="text/x-template"></script>
-<div class="content" id="index">
 <div class="header-top"></div>
+
+<div class="content" >
 <img src="images/header.png" style="width: 60%">
 <div class="portfolio-one-item full-bottom">
 <div class="portfolio-one-text">
@@ -197,7 +207,9 @@ Jadikan Buku Sahabatmu!
 </p>
 </div>
 </div>
+</div>
 
+<div class="content">
 <div class="container">
   <div class="row">
     <div class="col s12">
@@ -211,6 +223,9 @@ Jadikan Buku Sahabatmu!
     <div id="results" class="flow-text col s12"></div>
   </div>
 </div>
+</div>
+
+<div class="content">
 <h3>Statistik Pengunjung</h3>
 <div id="canvas-holder1" style="width:100%;">
 		<canvas id="chart1"></canvas>
@@ -218,8 +233,12 @@ Jadikan Buku Sahabatmu!
 		<div class="chartjs-tooltip" id="tooltip-1"></div>
 	</div>
 <p class="half-bottom"><a style="color: red" href="statistik.html">Selengkapnya...</a>
+</div>
+
+<div class="content" style="margin-top: -20px;">
 <div class="container features-page">
-<a @click="$emit('change-page', 'antologi')"><i class="fas fa-feather-alt"></i> Festival Menulis Cerpen <i class="fa fa-angle-right"></i></a><a @click="$emit('change-page', 'biblio')"><i class="fas fa-book-reader"></i> Pustakawan Cilik <i class="fa fa-angle-right"></i></a>
+<div id="ambil1"></div>
+<a href="biblio.html"><i class="fas fa-book-reader"></i> Pustakawan Cilik <i class="fa fa-angle-right"></i></a>
 </div>
 
 <h3>Profil PerpusTOP</h3>
@@ -227,9 +246,10 @@ Jadikan Buku Sahabatmu!
 TOP adalah akronim dari "Twenty One Purworejo" - SMPN 21 Purworejo, sekolah menengah di Kecamatan Bruno, Kabupaten Purworejo, Jawa Tengah. <a style="color: red" href="profil.html">Selengkapnya...</a>
 </p>
 <div class="container features-page">
-<a href="berita.html"><i class="fas fa-bullhorn"></i> Berita <i class="fa fa-angle-right"></i></a>
+<a href="cari.html"><i class="fas fa-list-ul"></i> Katalog <i class="fa fa-angle-right"></i></a>
 <a href="galeri-kartu.html"><i class="fas fa-id-card"></i> Kartu Anggota <i class="fa fa-angle-right"></i></a>
 <a href="pustakawan.html"><i class="fas fa-book-reader"></i> Pustakawan<i class="fa fa-angle-right"></i></a>
+<a href="statistik.html"><i class="fas fa-chart-line"></i> Laporan Statistik <i class="fa fa-angle-right"></i></a>
 <a href="chat.html"><i class="fas fa-concierge-bell"></i> Reservasi <i class="fa fa-angle-right"></i></a>
 </div>
 
@@ -255,56 +275,19 @@ Untuk pelayanan yang lebih baik, aplikasi akan selalu diperbarui dengan menambah
 <a href="#" class="show-share-bottom" style="text-align: left"><i class="fas fa-share-alt"></i> Bagikan aplikasi <i class="fa fa-angle-right"></i></a>
 </div>
 
-<p class="user-list-follow" style="margin-top: -40px;">
-<a href="versi.html">Versi 3.1</a>
-</p>
-</div>
-
-
-<script id="biblio" type="text/x-template">
-<div class="content" id="biblio">
-<div class="portfolio-one-item full-bottom">
-<div class="portfolio-one-text">
-<h3 class="title"><a style="color:#777777;" href="index.html"><i class="fas fa-arrow-left"></i></a></h3>
-<h3 class="title" g-component="SeparateText">"Biblio Club" Pustakawan Cilik</h3>
-
+<h3>Akun Anda</h3>
 <p class="half-bottom">
-Simpul Literasi Sekolah
-</p>
-</div>
-</div>
-<p class="half-bottom">
-Pustakawan cilik adalah partner pustakawan dalam mengelola perpustakaan sekolah. Anggota “Biblio Club” Pustakawan cilik dikenalkan sejak dini tentang dunia perpustakaan dan pengelolaannya, sehingga mereka dapat membantu pustakawan dalam mengelola bahan pustaka, juga melayani pengunjung perpustakaan, menjaga ketertiban di ruang baca, dan melakukan kontrol terhadap siapa saja yang terlambat mengembalikan. <a style="color: red" href="biblio-text.html">Selengkapnya...</a>
+Untuk masuk <a style="color:red" href="forum.html">Ruang Diskusi</a> anda harus login terlebih dahulu. Klik menu berikut untuk mengelola akun anda.
 </p>
 <div class="container features-page">
-<a href="education2.html"><i class="fab fa-youtube"></i> User Education (Pendidikan Pemakai) <i class="fa fa-angle-right"></i><p style="margin-left: 33px;margin-top: -20px;">dari Biblio Club</p></a>
+<a href="akun.html"><i class="fas fa-user"></i> Akun Anda <i class="fa fa-angle-right"></i></a>
 </div>
+
 <p class="user-list-follow">
-<a href="biblio-anggota.html" class="followkita">Daftar Anggota Biblio Club&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-right"></i></a>
-</p>
-<div id="divliterasi"></div>
-</div></script>
-
-<script id="antologi" type="text/x-template">
-<div class="content">
-<div class="portfolio-one-item full-bottom">
-<div class="portfolio-one-text">
-<h3 class="title"><a style="color:#777777;" href="index.html"><i class="fas fa-arrow-left"></i></a></h3>
-<h3 class="title">Antologi Cerpen 2019</h3>
-<p class="half-bottom">
-<a style="color: red">Perpustakaan SMPN 21 Purworejo</a>
+<a href="versi.html">Versi 3.0</a>
 </p>
 </div>
-</div>
-<div id ="divantologi"></div>
-</div>
-</script>
-
-<div class="content"></div>
-<div class="content"></div>
-<div class="content"></div>
-<div class="content"></div>
-<div class="content"></div>
+<div class="bawah"></div>
 
 <div class="share-bottom">
 <h3>Bagikan Aplikasi</h3>
