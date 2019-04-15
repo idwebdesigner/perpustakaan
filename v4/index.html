@@ -6,6 +6,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <title>Perpustakaan TOP SMPN 21 Purworejo</title>
 <link href="styles/style.css" rel="stylesheet" type="text/css">
+<link disabled id="dark-reader" href="styles/dark.css" rel="stylesheet" type="text/css">
 <link href="styles/menu.css" rel="stylesheet" type="text/css">
 <link href="styles/framework.css" rel="stylesheet" type="text/css">
 <link href="styles/all.css" rel="stylesheet" type="text/css">
@@ -50,7 +51,7 @@ input#search{
    }
  }
 </style>
-	<style>
+<style>
 		canvas{
 			-moz-user-select: none;
 			-webkit-user-select: none;
@@ -79,23 +80,42 @@ input#search{
 <script>
 $(document).ready(function(){
 
-   $('#ambil1').load("div/div-k1.html");
+   $('#ambil1').load("http://app.smpn21purworejo.sch.id/v4/div-k1.html");
 
 });
 </script>
 <script>
 $(document).ready(function(){
 
-   $('#ambil2').load("div/div-k2.html");
+   $('#ambil2').load("http://app.smpn21purworejo.sch.id/v4/div-k2.html");
 
 });
 </script>
 <script>
 $(document).ready(function(){
 
-   $('#ambil3').load("div/div-k3.html");
+   $('#ambil3').load("http://app.smpn21purworejo.sch.id/v4/div-k3.html");
 
 });
+</script>
+<script>
+function dark_toggle() {
+    var el1 = document.getElementById("dark-reader");
+    if(el1.disabled) {
+        el1.disabled = false;
+        localStorage.setItem("darkreader", "enabled");
+    } else {
+        el1.disabled = true;
+        localStorage.setItem("darkreader", "disabled");
+    }
+}
+</script>
+<script>
+ if (localStorage.getItem("darkreader") == "enabled") {
+     document.getElementById("dark-reader").disabled = false;
+ } else {
+     document.getElementById("dark-reader").disabled = true;
+ }
 </script>
 </head>
 <body>
@@ -107,14 +127,6 @@ $(document).ready(function(){
 
 
 <div class="header-top"></div>
-
-<ul class="footer-controls five-controls">
-<li><a href="index.html"> <i style="color: red" class="fas fa-home"></i></a></li>
-<li><a href="berita.html"> <i class="fas fa-bullhorn"></i></a></li>
-<li><a href="cari.html"> <i class="fas fa-search"></i></a></li>
-<li><a href="forum.html"> <i class="fas fa-comments"></i></a></li>
-<li><a href="biblio.html"> <i class="fas fa-book-reader"></i></a></li>
-</ul>
 
 <div class="content" >
 <img src="images/header.png" style="width: 60%">
@@ -136,8 +148,8 @@ Jadikan Buku Sahabatmu!
   <div class="row">
     <div class="col s12">
       <div class="input-field">
-        <input type="text" id="search" autocomplete="off" placeholder="Pencarian buku...">
-        <label style="margin-top: 10px;" for="search">Masukkan kata kunci judul, pengarang, atau penerbit</label>
+        <input type="text" id="search" autocomplete="off" placeholder="Penelusuran buku...">
+        <label style="margin-top: 10px;" for="search">&nbsp;Masukkan kata kunci judul, pengarang, atau penerbit.</label>
       </div>
     </div>
 
