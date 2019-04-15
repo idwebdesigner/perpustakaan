@@ -12,6 +12,7 @@
 <script type="text/javascript" src="scripts/jquery.js"></script>
 <script type="text/javascript" src="scripts/custom.js"></script>
 <script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.smoothState.min.js"></script>
 <script>
 $(document).ready(function(){
 
@@ -19,6 +20,11 @@ $(document).ready(function(){
 
 });
 </script>
+    <script>
+$(function() {
+  $('#all-elements').smoothState();
+});
+    </script>
 </head>
 <body>
 
@@ -34,7 +40,7 @@ $(document).ready(function(){
 <div class="portfolio-one-item full-bottom">
 <div class="portfolio-one-text">
 <h3 class="title"><a style="color:#777777;" href="index.html"><i class="fas fa-arrow-left"></i></a></h3>
-<h3 class="title">"Biblio Club" Pustakawan Cilik</h3>
+<h3 class="title" g-component="SeparateText">"Biblio Club" Pustakawan Cilik</h3>
 
 <p class="half-bottom">
 Simpul Literasi Sekolah
