@@ -15,6 +15,7 @@
 <script type="text/javascript" src="scripts/jquery.min.js"></script>
 <script type="text/javascript" src="scripts/Chart.min.js"></script>
 <script type="text/javascript" src="scripts/utils.js"></script>
+<script type="text/javascript" src="scripts/vue.js"></script>
 <style>
 .search-container{
   width: 100%;
@@ -117,60 +118,7 @@ function dark_toggle() {
      document.getElementById("dark-reader").disabled = true;
  }
 </script>
-</head>
-<body>
-
-<div style="background-color: transparent" id="preloader">
-<div id="status">
-</div>
-</div>
-
-
-<div class="header-top"></div>
-
-<div class="content" >
-<img src="images/header.png" style="width: 60%">
-<div class="portfolio-one-item full-bottom">
-<div class="portfolio-one-text">
-<h3 class="title">Selamat datang di Perpustakaan TOP (Twenty One Purworejo) - SMPN 21 Purworejo.</h3>
-
-<p class="half-bottom">
-Jadikan Buku Sahabatmu!
-</p>
-</div>
-</div>
-</div>
-
-<div class="content"></div>
-
-<div class="content">
-  <div class="container">
-  <div class="row">
-    <div class="col s12">
-      <div class="input-field">
-        <input type="text" id="search" autocomplete="off" placeholder="Penelusuran buku...">
-        <label style="margin-top: 10px;" for="search">&nbsp;Masukkan kata kunci judul, pengarang, atau penerbit.</label>
-      </div>
-    </div>
-
-    <!-- Results --><br/>
-    <div id="results" class="flow-text col s12"></div>
-  </div>
-  </div>
-</div>
-
-<script src='scripts/materialize.min.js'></script>
-<script src='scripts/fuse.min.js'></script>
-<script  src="http://app.smpn21purworejo.sch.id/v3/scripts/databuku.js"></script>
-
-<div class="content">
-    <h3>Statistik Pengunjung</h3>
-	<div id="canvas-holder1" style="width:100%;">
-		<canvas id="chart1"></canvas>
-		<div class="chartjs-tooltip" id="tooltip-0"></div>
-		<div class="chartjs-tooltip" id="tooltip-1"></div>
-	</div>
-	<script>
+<script>
 		var customTooltips = function(tooltip) {
 			$(this._chart.canvas).css('cursor', 'pointer');
 
@@ -237,13 +185,63 @@ Jadikan Buku Sahabatmu!
 			});
 		};
 	</script>
+</head>
+<body>
+
+<div style="background-color: transparent" id="preloader">
+<div id="status">
+</div>
 </div>
 
-<div class="content" style="margin-top: 10px;">
+<div id="app">
+  <transition name="page" :duration="1300">
+    <div class="page" :is="page" @change-page="onChangePage"></div>
+  </transition>
+</div>
+
+
+
+
+
+<script id="start" type="text/x-template">
+<div class="content" id="index">
+<div class="header-top"></div>
+<img src="images/header.png" style="width: 60%">
+<div class="portfolio-one-item full-bottom">
+<div class="portfolio-one-text">
+<h3 class="title">Selamat datang di Perpustakaan TOP (Twenty One Purworejo) - SMPN 21 Purworejo.</h3>
+
+<p class="half-bottom">
+Jadikan Buku Sahabatmu!
+</p>
+</div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col s12">
+      <div class="input-field">
+        <input type="text" id="search" autocomplete="off" placeholder="Penelusuran buku...">
+        <label style="margin-top: 10px;" for="search">&nbsp;Masukkan kata kunci judul, pengarang, atau penerbit.</label>
+      </div>
+    </div>
+
+    <!-- Results --><br/>
+    <div id="results" class="flow-text col s12"></div>
+  </div>
+</div>
+<h3>Statistik Pengunjung</h3>
+<div id="canvas-holder1" style="width:100%;">
+		<canvas id="chart1"></canvas>
+		<div class="chartjs-tooltip" id="tooltip-0"></div>
+		<div class="chartjs-tooltip" id="tooltip-1"></div>
+	</div>
 <p class="half-bottom"><a style="color: red" href="statistik.html">Selengkapnya...</a>
 <div class="container features-page">
+
+<button class="button button-start" type="button" @click="$emit('change-page', 'next')"> <span class="button-text">Start!</span></button>
+
 <div id="ambil1"></div>
-<a href="biblio.html"><i class="fas fa-book-reader"></i> Pustakawan Cilik <i class="fa fa-angle-right"></i></a>
+<a @click="$emit('change-page', 'next')"><i class="fas fa-book-reader"></i> Pustakawan Cilik <i class="fa fa-angle-right"></i></a>
 </div>
 
 <h3>Profil PerpusTOP</h3>
@@ -283,6 +281,36 @@ Untuk pelayanan yang lebih baik, aplikasi akan selalu diperbarui dengan menambah
 <a href="versi.html">Versi 3.1</a>
 </p>
 </div>
+</script>
+
+<script id="next" type="text/x-template">
+<div class="content" id="biblio">
+<div class="portfolio-one-item full-bottom">
+<div class="portfolio-one-text">
+<h3 class="title"><a style="color:#777777;" href="index.html"><i class="fas fa-arrow-left"></i></a></h3>
+<h3 class="title" g-component="SeparateText">"Biblio Club" Pustakawan Cilik</h3>
+
+<p class="half-bottom">
+Simpul Literasi Sekolah
+</p>
+</div>
+</div>
+<p class="half-bottom">
+Pustakawan cilik adalah partner pustakawan dalam mengelola perpustakaan sekolah. Anggota “Biblio Club” Pustakawan cilik dikenalkan sejak dini tentang dunia perpustakaan dan pengelolaannya, sehingga mereka dapat membantu pustakawan dalam mengelola bahan pustaka, juga melayani pengunjung perpustakaan, menjaga ketertiban di ruang baca, dan melakukan kontrol terhadap siapa saja yang terlambat mengembalikan. <a style="color: red" href="biblio-text.html">Selengkapnya...</a>
+</p>
+<div class="container features-page">
+<a href="education2.html"><i class="fab fa-youtube"></i> User Education (Pendidikan Pemakai) <i class="fa fa-angle-right"></i><p style="margin-left: 33px;margin-top: -20px;">dari Biblio Club</p></a>
+</div>
+<p class="user-list-follow">
+<a href="biblio-anggota.html" class="followkita">Daftar Anggota Biblio Club&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-right"></i></a>
+</p>
+</div>
+</script>
+
+<script  src="new/js/index.js"></script>
+
+
+<div class="content"></div>
 
 <div class="share-bottom">
 <h3>Bagikan Aplikasi</h3>
@@ -312,4 +340,9 @@ Play Store
 
 <a href="#" class="close-share-bottom">Tutup</a>
 </div>
+
+<script src='scripts/materialize.min.js'></script>
+<script src='scripts/fuse.min.js'></script>
+<script  src="scripts/databuku.js"></script>
+
 </body>
