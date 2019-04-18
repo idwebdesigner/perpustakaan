@@ -185,68 +185,6 @@ function dark_toggle() {
 			});
 		};
 	</script>
-<style>
-:root {
-  --gutter: 20px;
-}
-
-.app {
-  padding: var(--gutter) 0;
-  display: grid;
-  grid-gap: var(--gutter) 0;
-  grid-template-columns: var(--gutter) 1fr var(--gutter);
-  align-content: start;
-}
-
-.app > * {
-  grid-column: 2 / -2;
-}
-
-.app > .full {
-  grid-column: 1 / -1;
-}
-
-.hs {
-  display: grid;
-  grid-gap: calc(var(--gutter) / 2);
-  grid-template-columns: 10px;
-  grid-template-rows: minmax(150px, 1fr);
-  grid-auto-flow: column;
-  grid-auto-columns: calc(50% - var(--gutter) * 2);
-
-  overflow-x: scroll;
-  scroll-snap-type: x proximity;
-  padding-bottom: calc(.75 * var(--gutter));
-  margin-bottom: calc(-.25 * var(--gutter));
-}
-
-.hs:before,
-.hs:after {
-  content: '';
-  width: 10px;
-}
-
-
-
-.app {
-  width: 375px;
-  height: 667px;
-  background: #DBD0BC;
-  overflow-y: scroll;
-}
-
-.hs > li,
-.item {
-  scroll-snap-align: center;
-  padding: calc(var(--gutter) / 2 * 1.5);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #fff;
-  border-radius: 8px;
-}
-</style>
 </head>
 <body>
 
@@ -302,42 +240,35 @@ Jadikan Buku Sahabatmu!
 <p class="half-bottom">
 TOP adalah akronim dari "Twenty One Purworejo" - SMPN 21 Purworejo, sekolah menengah di Kecamatan Bruno, Kabupaten Purworejo, Jawa Tengah. <a style="color: red" href="profil.html">Selengkapnya...</a>
 </p>
-
-<div class="app">
-  <h1>Some headline</h1>
-
-  <ul class="hs full">
-    <li class="item">test</li>
-    <li class="item">test</li>
-    <li class="item">test</li>
-    <li class="item">test</li>
-    <li class="item">test</li>
-    <li class="item">test</li>
-  </ul>
-
-  <ul class="hs full">
-    <li class="item">test</li>
-    <li class="item">test</li>
-    <li class="item">test</li>
-    <li class="item">test</li>
-  </ul>
-
-  <div class="container">
-    <div class="item">
-      <h3>Block for context</h3>
-    </div>
-  </div>
-</div>
-
 <div class="container features-page">
 <a href="galeri-kartu.html"><i class="fas fa-id-card"></i> Kartu Anggota <i class="fa fa-angle-right"></i></a>
 <a href="pustakawan.html"><i class="fas fa-book-reader"></i> Pustakawan<i class="fa fa-angle-right"></i></a>
 </div>
 
-  <div class="column" style="width: 200%;">
-    <img style="width: 100px; float: left; text-align: center" src="images/menu.png"><img style="width: 100px; float: left; text-align: center;margin-left: 10px;" src="images/menu.png"><img style="width: 100px; float: left; text-align: center;margin-left: 10px;" src="images/menu.png"><img style="width: 100px; float: left; text-align: center;margin-left: 10px;" src="images/menu.png">
+  <div class="column" style="width: 30%;float: left; text-align: center; border: 1px solid #dddddd;">
+    <a href="galeri-kartu.html">
+    <h1 style="padding-top: 30px;"><i class="fas fa-id-card"></i></h1>
+    <p>Kartu</p>
+    </a>
+  </div>
+  <div class="column" style="width: 5%;float: left; text-align: center;">&nbsp;
+  </div>
+  <div class="column" style="width: 30%;float: left; text-align: center; border: 1px solid #dddddd;">
+    <a href="berita.html">
+    <h1 style="padding-top: 30px;"><i class="fas fa-bullhorn"></i></h1>
+    <p>Berita</p>
+    </a>
+  </div>
+  <div class="column" style="width: 5%;float: left; text-align: center;">&nbsp;
+  </div>
+  <div class="column" style="width: 30%;float: left; text-align: center; border: 1px solid #dddddd;">
+    <a href="forum.html">
+    <h1 style="padding-top: 30px;"><i class="fas fa-comments"></i></h1>
+    <p>Forum</p>
+    </a>
   </div>
 
+<br/><br/><br/><br/><br/><br/><br/>
 <h3>Antologi Cerpen 2019</h3>
 <div id="ambil2"></div>
 
