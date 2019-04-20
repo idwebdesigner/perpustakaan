@@ -203,8 +203,7 @@ function dark_toggle() {
 }
 
 .app > .full {
-  grid-column: 1 / -1;  overflow: hidden;
-
+  grid-column: 1 / -1;
 }
 
 .hs {
@@ -215,6 +214,7 @@ function dark_toggle() {
   grid-auto-flow: column;
   grid-auto-columns: calc(50% - var(--gutter) * 2);
 
+  overflow-x: scroll;
   padding-bottom: calc(.75 * var(--gutter));
   margin-bottom: calc(-.25 * var(--gutter));
 }
@@ -227,8 +227,7 @@ function dark_toggle() {
 
 
 .app {
-  width: 100%;  overflow-x: scroll;
-
+  width: 100%;
 }
 
 .hs > li,
