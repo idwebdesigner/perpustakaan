@@ -203,7 +203,8 @@ function dark_toggle() {
 }
 
 .app > .full {
-  grid-column: 1 / -1;
+  grid-column: 1 / -1;  overflow: hidden;
+
 }
 
 .hs {
@@ -214,8 +215,6 @@ function dark_toggle() {
   grid-auto-flow: column;
   grid-auto-columns: calc(50% - var(--gutter) * 2);
 
-  overflow-x: scroll;
-  scroll-snap-type: x proximity;
   padding-bottom: calc(.75 * var(--gutter));
   margin-bottom: calc(-.25 * var(--gutter));
 }
@@ -228,8 +227,8 @@ function dark_toggle() {
 
 
 .app {
-  width: 100%;
-  overflow-x: hidden;
+  width: 100%;  overflow-x: scroll;
+
 }
 
 .hs > li,
@@ -316,12 +315,10 @@ TOP adalah akronim dari "Twenty One Purworejo" - SMPN 21 Purworejo, sekolah mene
 <div id="ambil2"></div>
 
 <p class="half-bottom">
-Antologi, buku kumpulan cerita pendek hasil karya guru dan siswa SMPN 21 Purworejo.</p>
-<div class="container features-page">
-<a href="literasi.html"><i class="fas fa-calendar-week"></i> Agenda Kegiatan <i class="fa fa-angle-right"></i></a>
-<a href="antologi.html"><i class="fas fa-sticky-note"></i> Lihat Laporan <i class="fa fa-angle-right"></i></a>
+Antologi, buku kumpulan cerita pendek hasil karya guru dan siswa SMPN 21 Purworejo. <a style="color: red" href="antologi.html">Selengkapnya...</a></p>
 </div>
 
+<div class="content" style="margin-top: 20px">
 <h3><img src="images/header.png" style="width: 40%">
 </h3>
 <p class="half-bottom">
