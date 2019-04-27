@@ -1,7 +1,38 @@
 /* Your app styles here */
-.ios .tabbar-labels .tab-link:not(.tab-link-active) .icon-ios-fill {
-  display: none;
+:root{--f7-bars-shadow-bottom-image:none;}
+navbar-inner{background-color: #ffffff}
+
+.search-container{
+  width: 100%;
+  display: block;
+  margin: 0 auto;
 }
-.ios .tabbar-labels .tab-link.tab-link-active .icon:not(.icon-ios-fill) {
-  display: none;
-}
+
+input#search{
+  margin: 0 auto;
+  width: 100%;
+  height: 45px;
+  padding: 0 20px;
+  border-radius: 0px;
+
+  font-size: 0.8rem;
+  border: 1px solid #D0CFCE;
+  outline: none;
+  &:focus{
+    border: 1px solid #008ABF;
+    transition: 0.35s ease;
+    color: #008ABF;
+    &::-webkit-input-placeholder{
+      transition: opacity 0.45s ease;
+  	  opacity: 0;
+     }
+    &::-moz-placeholder {
+      transition: opacity 0.45s ease;
+  	  opacity: 0;
+     }
+    &:-ms-placeholder {
+     transition: opacity 0.45s ease;
+  	 opacity: 0;
+     }
+   }
+ }
