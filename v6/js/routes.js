@@ -8,6 +8,14 @@ routes = [
     url: './pages/about.html',
   },
   {
+    path: '/antologi/',
+    url: './pages/antologi.html',
+  },
+  {
+    path: '/biblio/',
+    url: './pages/biblio.html',
+  },
+  {
     path: '/form/',
     url: './pages/form.html',
   },
