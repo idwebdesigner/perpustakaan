@@ -8,16 +8,20 @@ routes = [
     url: './pages/about.html',
   },
   {
-    path: '/catalog/',
-    componentUrl: './pages/catalog.html',
+    path: '/antologi/',
+    url: './pages/antologi.html',
   },
   {
-    path: '/product/:id/',
-    componentUrl: './pages/product.html',
+    path: '/biblio/',
+    url: './pages/biblio.html',
   },
   {
-    path: '/settings/',
-    url: './pages/settings.html',
+    path: '/cari/',
+    url: './pages/cari.html',
+  },
+  {
+    path: '/form/',
+    url: './pages/form.html',
   },
   // Page Loaders & Router
   {

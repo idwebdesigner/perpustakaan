@@ -1,7 +1,10 @@
 /* Your app styles here */
-:root{--f7-bars-shadow-bottom-image:none;}
-
-.navbar {background-color: transparent; position: fixed; !important}
+.ios .tabbar-labels .tab-link:not(.tab-link-active) .icon-ios-fill {
+  display: none;
+}
+.ios .tabbar-labels .tab-link.tab-link-active .icon:not(.icon-ios-fill) {
+  display: none;
+}
 
 .search-container{
   width: 100%;

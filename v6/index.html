@@ -2,6 +2,15 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <!--
+  Customize this policy to fit your own app's needs. For more guidance, see:
+      https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+  Some notes:
+      * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+      * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+      * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+          * Enable inline JS: add 'unsafe-inline' to default-src
+  -->
   <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -14,117 +23,230 @@
   <link rel="stylesheet" href="framework7/css/framework7.bundle.min.css">
   <link rel="stylesheet" href="css/icons.css">
   <link rel="stylesheet" href="css/app.css">
-  <link rel="stylesheet" href="css/framework.css">
-  <link disabled id="dark-reader" href="css/dark.css" rel="stylesheet" type="text/css">
-  <link href="css/fonts.css" rel="stylesheet" type="text/css">
-
-  <script type="text/javascript" src="scripts/jquery.min.js"></script>
-
-<script>
-function dark_toggle() {
-    var el1 = document.getElementById("dark-reader");
-    if(el1.disabled) {
-        el1.disabled = false;
-        localStorage.setItem("darkreader", "enabled");
-    } else {
-        el1.disabled = true;
-        localStorage.setItem("darkreader", "disabled");
-    }
-}
- if (localStorage.getItem("darkreader") == "enabled") {
-     document.getElementById("dark-reader").disabled = false;
- } else {
-     document.getElementById("dark-reader").disabled = true;
- }
-</script>
-
 </head>
 <body>
   <div id="app">
     <!-- Status bar overlay for fullscreen mode-->
     <div class="statusbar"></div>
-
-    <!-- Your main view, should have "view-main" class -->
-    <div class="view view-main safe-areas">
-      <!-- Page, data-name contains page name which can be used in callbacks -->
-      <div class="page" data-name="home">
-
-        <!-- Scrollable page content-->
-        <div class="page-content">
-
-<div class="content" >
-    <img src="images/header.png" style="width: 60%;margin-top: 50px;">
-    <h3 class="title" style="margin-top: 10px;">Selamat datang di Perpustakaan TOP (Twenty One Purworejo) - SMPN 21 Purworejo.</h3>
-    <p class="half-bottom">Jadikan Buku Sahabatmu!</p>
-</div>
-
-<div class="content" style="margin-top: 30px;">
-<div class="container">
-  <div class="row">
-    <div class="col s12">
-      <div class="input-field">
-        <input type="text" id="search" autofocus="autofocus" autocomplete="off" placeholder="Pencarian buku...">
-        <label style="margin-top: 10px;" for="search">&nbsp;Masukkan kata kunci judul, pengarang, atau penerbit.</label>
+    <!-- Left panel with cover effect-->
+    <div class="panel panel-left panel-cover theme-dark">
+      <div class="view">
+        <div class="page">
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="title">Left Panel</div>
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="block">Left panel content goes here</div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-</div>
+    <!-- Right panel with reveal effect-->
+    <div class="panel panel-right panel-reveal theme-dark">
+      <div class="view">
+        <div class="page">
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="title">Right Panel</div>
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="block">Right panel content goes here</div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<div class="content" >
-    <!-- Results --><br/>
-    <div id="results" class="flow-text col s12"></div>
-</div>
+    <!-- Views/Tabs container -->
+    <div class="views tabs safe-areas">
+      <!-- Tabbar for switching views-tabs -->
+      <div class="toolbar tabbar-labels toolbar-bottom">
+        <div class="toolbar-inner">
+          <a href="#view-home" class="tab-link tab-link-active">
+            <i class="icon f7-icons ios-only">home</i>
+            <i class="icon f7-icons ios-only icon-ios-fill">home_fill</i>
+            <i class="icon material-icons md-only">home</i>
+            <span class="tabbar-label">Home</span>
+          </a>
+          <a href="#view-catalog" class="tab-link">
+            <i class="icon f7-icons ios-only">list</i>
+            <i class="icon f7-icons ios-only icon-ios-fill">list_fill</i>
+            <i class="icon material-icons md-only">view_list</i>
+            <span class="tabbar-label">Catalog</span>
+          </a>
+          <a href="#view-settings" class="tab-link">
+            <i class="icon f7-icons ios-only">settings</i>
+            <i class="icon f7-icons ios-only icon-ios-fill">settings_fill</i>
+            <i class="icon material-icons md-only">settings</i>
+            <span class="tabbar-label">Settings</span>
+          </a>
+        </div>
+      </div>
+      <!-- Your main view/tab, should have "view-main" class. It also has "tab-active" class -->
+      <div id="view-home" class="view view-main tab tab-active">
+        <!-- Page, data-name contains page name which can be used in page callbacks -->
+        <div class="page" data-name="home">
+          <!-- Top Navbar -->
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="left">
+                <a href="#" class="link icon-only panel-open" data-panel="left">
+                  <i class="icon f7-icons ios-only">menu</i>
+                  <i class="icon material-icons md-only">menu</i>
+                </a>
+              </div>
+              <div class="title sliding">Home</div>
+              <div class="right">
+                <a href="#" class="link icon-only panel-open" data-panel="right">
+                  <i class="icon f7-icons ios-only">menu</i>
+                  <i class="icon material-icons md-only">menu</i>
+                </a>
+              </div>
+            </div>
+          </div>
 
-<div class="content" style="margin-top: -40px;">
-<div class="container features-page">
-<a href="/antologi/"><i class="fas fa-feather-alt"></i> Festival Menulis Cerpen <i class="fa fa-angle-right"></i></a>
-<a href="/biblio/"><i class="fas fa-book-reader"></i> Pustakawan Cilik <i class="fa fa-angle-right"></i></a>
-</div>
-</div>
+          <!-- Scrollable page content-->
+          <div class="page-content">
+            <div class="block block-strong">
+              <p>This is an example of tabs-layout application. The main point of such tabbed layout is that each tab contains independent view with its own routing and navigation.</p>
+              <p>Each tab/view may have different layout, different navbar type (dynamic, fixed or static) or without navbar like this tab.</p>
+            </div>
 
-<div class="content">
-<h3>Profil Perpustakaan</h3>
-<p class="half-bottom">
-TOP adalah akronim dari "Twenty One Purworejo" - SMPN 21 Purworejo, sekolah menengah di Kec. Bruno, Kab. Purworejo, Jawa Tengah. <a style="color: red" href="profil.html">Selengkapnya...</a>
-</p>
-</div>
+            <div class="block-title">Navigation</div>
+            <div class="list">
+              <ul>
+                <li>
+                  <a href="/about/" class="item-content item-link">
+                    <div class="item-inner">
+                      <div class="item-title">About</div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
 
-<div class="app">
-  <ul class="hs full">
-    <li class="item" style="border: 1px solid #dddddd; font-size: 11px"><a href="galeri-kartu.html"><h1 ><i class="fas fa-id-card"></i></h1></a>Kartu Anggota</li>
-    <li class="item" style="border: 1px solid #dddddd; font-size: 11px"><a href="pustakawan.html"><h1 ><i class="fas fa-book-reader"></i></h1></a>Pustakawan</li>
-    <li class="item" style="border: 1px solid #dddddd; font-size: 11px"><a href="forum.html"><h1 ><i class="fas fa-comments"></i></h1></a>Ruang Diskusi</li>
-    <li class="item" style="border: 1px solid #dddddd; font-size: 11px"><a href="literasi.html"><h1 ><i class="fas fa-calendar-week"></i></h1></a>Agenda Kegiatan</li>
-    <li class="item" style="border: 1px solid #dddddd; font-size: 11px"><a href="berita.html"><h1 ><i class="fas fa-bullhorn"></i></h1></a>Berita Terbaru</li>
-    <li class="item" style="border: 1px solid #dddddd; font-size: 11px"><a href="education.html"><h1 ><i class="fas fa-play"></i></h1></a>Pend. Pemakai</li>
-  </ul>
-</div>
+            <div class="block-title">Modals</div>
+            <div class="block block-strong">
+              <div class="row">
+                <div class="col-50">
+                  <a href="#" class="button button-raised button-fill popup-open" data-popup="#my-popup">Popup</a>
+                </div>
+                <div class="col-50">
+                  <a href="#" class="button button-raised button-fill login-screen-open" data-login-screen="#my-login-screen">Login Screen</a>
+                </div>
+              </div>
+            </div>
 
-<div class="content" style="margin-top: 10px">
-<h3><img src="images/header.png" style="width: 40%">
-</h3>
-<p class="half-bottom">
-Dibuat dengan <i style="color: red;" class="fas fa-heart"></i> di SMPN 21 Purworejo
-</p>
-<label href="javascript:void(0)" onclick="dark_toggle();return false;" title="Toggle night mode" class="switch"><input type="checkbox" /><div></div></label>
-<div style="margin-left: 50px;margin-top: -25px;">Mode Gelap</div>
+            <div class="block-title">Panels</div>
+            <div class="block block-strong">
+              <div class="row">
+                <div class="col-50">
+                  <a href="#" class="button button-raised button-fill panel-open" data-panel="left">Left Panel</a>
+                </div>
+                <div class="col-50">
+                  <a href="#" class="button button-raised button-fill panel-open" data-panel="right">Right Panel</a>
+                </div>
+              </div>
+            </div>
 
-<div class="container features-page">
-<a href="https://play.google.com/store/apps/details?id=id.web.designer.perpus"><i class="fas fa-cloud-download-alt"></i>Periksa pembaruan <i class="fa fa-angle-right"></i></a>
-<a href="#" class="show-share-bottom" style="text-align: left"><i class="fas fa-share-alt"></i> Bagikan<i class="fa fa-angle-right"></i></a>
-</div>
+            <div class="block-title searchbar-hide-on-search">Page Loaders & Router</div>
+            <div class="list links-list searchbar-hide-on-search">
+              <ul>
+                <li>
+                  <a href="/page-loader-template7/vladimir/123/about-me/1/?start=0&end=30#top">Template7 Page</a>
+                </li>
+                <li>
+                  <a href="/page-loader-component/vladimir/123/about-me/1/?start=0&end=30#top">Component Page</a>
+                </li>
+                <li>
+                  <a href="/load-something-that-doesnt-exist/">Default Route (404)</a>
+                </li>
+                <li>
+                  <a href="/request-and-load/user/123456/">Request Data & Load</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 
-<p class="user-list-follow">
-<a href="versi.html">Versi 3.0</a>
-</p>
-</div>
+      <!-- Catalog View -->
+      <div id="view-catalog" class="view tab">
+        <!-- Catalog page will be loaded here dynamically from /catalog/ route -->
+      </div>
 
+      <!-- Settings View -->
+      <div id="view-settings" class="view tab">
+        <!-- Settings page will be loaded here dynamically from /settings/ route -->
+      </div>
+    </div>
 
+    <!-- Popup -->
+    <div class="popup" id="my-popup">
+      <div class="view">
+        <div class="page">
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="title">Popup</div>
+              <div class="right">
+                <a href="#" class="link popup-close">Close</a>
+              </div>
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="block">
+              <p>Popup content goes here.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Login Screen -->
+    <div class="login-screen" id="my-login-screen">
+      <div class="view">
+        <div class="page">
+          <div class="page-content login-screen-content">
+            <div class="login-screen-title">Login</div>
+            <div class="list">
+              <ul>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Username</div>
+                    <div class="item-input-wrap">
+                      <input type="text" name="username" placeholder="Your username">
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Password</div>
+                    <div class="item-input-wrap">
+                      <input type="password" name="password" placeholder="Your password">
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="list">
+              <ul>
+                <li>
+                  <a href="#" class="item-link list-button login-button">Sign In</a>
+                </li>
+              </ul>
+              <div class="block-footer">Some text about login information.<br>Click "Sign In" to close Login Screen</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+  <!-- Cordova -->
+  <!--
+  <script src="cordova.js"></script>
+  -->
 
   <!-- Framework7 library -->
   <script src="framework7/js/framework7.bundle.min.js"></script>
@@ -134,9 +256,5 @@ Dibuat dengan <i style="color: red;" class="fas fa-heart"></i> di SMPN 21 Purwor
 
   <!-- Your custom app scripts -->
   <script src="js/app.js"></script>
-
-  <script src='scripts/materialize.min.js'></script>
-  <script src='scripts/fuse.min.js'></script>
-  <script  src="scripts/databuku.js"></script>
 </body>
 </html>
