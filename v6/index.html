@@ -24,6 +24,8 @@
   <link rel="stylesheet" href="css/icons.css">
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/all.css">
+  <script type="text/javascript" src="scripts/jquery.min.js"></script>
+
 </head>
 <body>
   <div id="app">
@@ -40,21 +42,6 @@
           </div>
           <div class="page-content">
             <div class="block">Left panel content goes here</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Right panel with reveal effect-->
-    <div class="panel panel-right panel-reveal theme-dark">
-      <div class="view">
-        <div class="page">
-          <div class="navbar">
-            <div class="navbar-inner">
-              <div class="title">Right Panel</div>
-            </div>
-          </div>
-          <div class="page-content">
-            <div class="block">Right panel content goes here</div>
           </div>
         </div>
       </div>
@@ -84,15 +71,14 @@
         <!-- Page, data-name contains page name which can be used in page callbacks -->
         <div class="page" data-name="home">
           <!-- Top Navbar -->
-          <div class="navbar">
+          <div class="navbar" style="background-color: #ffffff">
             <div class="navbar-inner">
               <div class="left">
                 <a href="#" class="link icon-only panel-open" data-panel="left">
-                  <i class="icon f7-icons ios-only">menu</i>
-                  <i class="icon material-icons md-only">menu</i>
+                <img src="images/21.jpg" width="24px;" style="margin-left: 10px;">
                 </a>
               </div>
-              <div class="title sliding">Beranda</div>
+              <div class="title sliding" style="font-size: 16px;">SMPN 21 Purworejo</div>
               <div class="right">
                 <a href="#" class="link icon-only panel-open" data-panel="right">
                   <i class="icon f7-icons ios-only">menu</i>
@@ -105,71 +91,38 @@
           <!-- Scrollable page content-->
           <div class="page-content">
 
-<div class="block block-strong" >
+<div class="block">
     <img src="images/header.png" style="width: 60%;">
     <h3 class="title" style="margin-top: 10px;">Selamat datang di Perpustakaan TOP (Twenty One Purworejo) - SMPN 21 Purworejo.</h3>
     <p class="half-bottom">Jadikan Buku Sahabatmu!</p>
 </div>
 
-            <div class="block block-strong">
-              <p>This is an example of tabs-layout application. The main point of such tabbed layout is that each tab contains independent view with its own routing and navigation.</p>
-              <p>Each tab/view may have different layout, different navbar type (dynamic, fixed or static) or without navbar like this tab.</p>
-            </div>
+<div class="content block" style="margin-top: 30px;">
+<div class="container">
+  <div class="row">
+    <div class="col s12">
+      <div class="input-field">
+        <input type="text" id="search" autofocus="autofocus" autocomplete="off" placeholder="Pencarian buku...">
+        <label style="margin-top: 10px;font-size:11px;" for="search">&nbsp;Masukkan kata kunci judul, pengarang, atau penerbit.</label>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
-            <div class="block-title">Navigation</div>
-            <div class="list">
-              <ul>
-                <li>
-                  <a href="/about/" class="item-content item-link">
-                    <div class="item-inner">
-                      <div class="item-title">About</div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
+<div class="content block" >
+    <!-- Results --><br/>
+    <div id="results" class="flow-text col s12"></div>
+</div>
 
-            <div class="block-title">Modals</div>
-            <div class="block block-strong">
-              <div class="row">
-                <div class="col-50">
-                  <a href="#" class="button button-raised button-fill popup-open" data-popup="#my-popup">Popup</a>
-                </div>
-                <div class="col-50">
-                  <a href="#" class="button button-raised button-fill login-screen-open" data-login-screen="#my-login-screen">Login Screen</a>
-                </div>
-              </div>
-            </div>
+<div class="content block" style="margin-top: -40px;">
+<div class="container features-page">
+<a href="/antologi/"><i class="fas fa-feather-alt"></i> Festival Menulis Cerpen <i class="fa fa-angle-right"></i></a>
+<a href="/biblio/"><i class="fas fa-book-reader"></i> Pustakawan Cilik <i class="fa fa-angle-right"></i></a>
+</div>
+</div>
 
-            <div class="block-title">Panels</div>
-            <div class="block block-strong">
-              <div class="row">
-                <div class="col-50">
-                  <a href="#" class="button button-raised button-fill panel-open" data-panel="left">Left Panel</a>
-                </div>
-                <div class="col-50">
-                  <a href="#" class="button button-raised button-fill panel-open" data-panel="right">Right Panel</a>
-                </div>
-              </div>
-            </div>
 
-            <div class="block-title searchbar-hide-on-search">Page Loaders & Router</div>
-            <div class="list links-list searchbar-hide-on-search">
-              <ul>
-                <li>
-                  <a href="/page-loader-template7/vladimir/123/about-me/1/?start=0&end=30#top">Template7 Page</a>
-                </li>
-                <li>
-                  <a href="/page-loader-component/vladimir/123/about-me/1/?start=0&end=30#top">Component Page</a>
-                </li>
-                <li>
-                  <a href="/load-something-that-doesnt-exist/">Default Route (404)</a>
-                </li>
-                <li>
-                  <a href="/request-and-load/user/123456/">Request Data & Load</a>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
@@ -258,5 +211,9 @@
 
   <!-- Your custom app scripts -->
   <script src="js/app.js"></script>
+
+  <script src='scripts/materialize.min.js'></script>
+  <script src='scripts/fuse.min.js'></script>
+  <script  src="scripts/databuku.js"></script>
 </body>
 </html>
