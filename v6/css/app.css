@@ -1,6 +1,7 @@
 /* Your app styles here */
 :root{--f7-bars-shadow-bottom-image:none;}
-navbar-inner{background-color: #ffffff}
+
+.navbar {background-color: transparent; position: fixed; !important}
 
 .search-container{
   width: 100%;

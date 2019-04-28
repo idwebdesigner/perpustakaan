@@ -16,6 +16,10 @@ routes = [
     url: './pages/biblio.html',
   },
   {
+    path: '/cari/',
+    url: './pages/cari.html',
+  },
+  {
     path: '/form/',
     url: './pages/form.html',
   },

@@ -19,8 +19,6 @@
   <link href="css/fonts.css" rel="stylesheet" type="text/css">
 
   <script type="text/javascript" src="scripts/jquery.min.js"></script>
-  <script type="text/javascript" src="scripts/Chart.min.js"></script>
-  <script type="text/javascript" src="scripts/utils.js"></script>
 
 <script>
 function dark_toggle() {
@@ -39,109 +37,12 @@ function dark_toggle() {
      document.getElementById("dark-reader").disabled = true;
  }
 </script>
-<script>
-		var customTooltips = function(tooltip) {
-			$(this._chart.canvas).css('cursor', 'pointer');
-
-			var positionY = this._chart.canvas.offsetTop;
-			var positionX = this._chart.canvas.offsetLeft;
-
-			$('.chartjs-tooltip').css({
-				opacity: 0,
-			});
-
-			if (!tooltip || !tooltip.opacity) {
-				return;
-			}
-
-			if (tooltip.dataPoints.length > 0) {
-				tooltip.dataPoints.forEach(function(dataPoint) {
-					var content = [dataPoint.xLabel, dataPoint.yLabel].join(': ');
-					var $tooltip = $('#tooltip-' + dataPoint.datasetIndex);
-
-					$tooltip.html(content);
-					$tooltip.css({
-						opacity: 1,
-						top: positionY + dataPoint.y + 'px',
-						left: positionX + dataPoint.x + 'px',
-					});
-				});
-			}
-		};
-		var color = Chart.helpers.color;
-		var lineChartData = {
-			labels: ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun'],
-			datasets: [{
-				label: 'Laki-laki',
-				backgroundColor: color(window.chartColors.red).alpha(0.2).rgbString(),
-				borderColor: window.chartColors.red,
-				pointBackgroundColor: window.chartColors.red,
-				data: [22, 5, 33, 5, 22, 3]
-			}, {
-				label: 'Perempuan',
-				backgroundColor: color(window.chartColors.blue).alpha(0.2).rgbString(),
-				borderColor: window.chartColors.blue,
-				pointBackgroundColor: window.chartColors.blue,
-				data: [12, 19, 13, 5, 42, 6]
-			}]
-		};
-
-		window.onload = function() {
-			var chartEl = document.getElementById('chart1');
-			new Chart(chartEl, {
-				type: 'line',
-				data: lineChartData,
-				options: {
-					title: {
-						display: true,
-						text: 'Januari - Juni, 2019'
-					},
-					tooltips: {
-						enabled: false,
-						mode: 'index',
-						intersect: false,
-						custom: customTooltips
-					}
-				}
-			});
-		};
-	</script>
 
 </head>
 <body>
   <div id="app">
     <!-- Status bar overlay for fullscreen mode-->
     <div class="statusbar"></div>
-    <!-- Left panel with cover effect-->
-    <div class="panel panel-left panel-cover theme-dark">
-      <div class="view">
-        <div class="page">
-          <div class="navbar">
-            <div class="navbar-inner">
-              <div class="title">Left Panel</div>
-            </div>
-          </div>
-          <div class="page-content">
-            <div class="block">Left panel content goes here</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Right panel with reveal effect-->
-    <div class="panel panel-right panel-reveal theme-dark">
-      <div class="view">
-        <div class="page">
-          <div class="navbar">
-            <div class="navbar-inner">
-              <div class="title">Right Panel</div>
-            </div>
-          </div>
-          <div class="page-content">
-            <div class="block">Right panel content goes here</div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- Your main view, should have "view-main" class -->
     <div class="view view-main safe-areas">
@@ -162,7 +63,7 @@ function dark_toggle() {
   <div class="row">
     <div class="col s12">
       <div class="input-field">
-        <input type="text" id="search" autocomplete="off" placeholder="Pencarian buku...">
+        <input type="text" id="search" autofocus="autofocus" autocomplete="off" placeholder="Pencarian buku...">
         <label style="margin-top: 10px;" for="search">&nbsp;Masukkan kata kunci judul, pengarang, atau penerbit.</label>
       </div>
     </div>
@@ -175,17 +76,7 @@ function dark_toggle() {
     <div id="results" class="flow-text col s12"></div>
 </div>
 
-<div class="content">
-<h3>Statistik Pengunjung</h3>
-<div id="canvas-holder1" style="width:100%;">
-		<canvas id="chart1"></canvas>
-		<div class="chartjs-tooltip" id="tooltip-0"></div>
-		<div class="chartjs-tooltip" id="tooltip-1"></div>
-	</div>
-<p class="half-bottom"><a style="color: red" href="statistik.html">Selengkapnya...</a>
-</div>
-
-<div class="content" style="margin-top: -20px;">
+<div class="content" style="margin-top: -40px;">
 <div class="container features-page">
 <a href="/antologi/"><i class="fas fa-feather-alt"></i> Festival Menulis Cerpen <i class="fa fa-angle-right"></i></a>
 <a href="/biblio/"><i class="fas fa-book-reader"></i> Pustakawan Cilik <i class="fa fa-angle-right"></i></a>
@@ -201,12 +92,12 @@ TOP adalah akronim dari "Twenty One Purworejo" - SMPN 21 Purworejo, sekolah mene
 
 <div class="app">
   <ul class="hs full">
-    <li class="item" style="border: 1px solid #dddddd;"><a href="galeri-kartu.html"><h1 ><i class="fas fa-id-card"></i></h1></a>Kartu Anggota</li>
-    <li class="item" style="border: 1px solid #dddddd;"><a href="pustakawan.html"><h1 ><i class="fas fa-book-reader"></i></h1></a>Pustakawan</li>
-    <li class="item" style="border: 1px solid #dddddd;"><a href="forum.html"><h1 ><i class="fas fa-comments"></i></h1></a>Ruang Diskusi</li>
-    <li class="item" style="border: 1px solid #dddddd;"><a href="literasi.html"><h1 ><i class="fas fa-calendar-week"></i></h1></a>Agenda Kegiatan</li>
-    <li class="item" style="border: 1px solid #dddddd;"><a href="berita.html"><h1 ><i class="fas fa-bullhorn"></i></h1></a>Berita Terbaru</li>
-    <li class="item" style="border: 1px solid #dddddd;"><a href="education.html"><h1 ><i class="fas fa-play"></i></h1></a>Pend. Pemakai</li>
+    <li class="item" style="border: 1px solid #dddddd; font-size: 11px"><a href="galeri-kartu.html"><h1 ><i class="fas fa-id-card"></i></h1></a>Kartu Anggota</li>
+    <li class="item" style="border: 1px solid #dddddd; font-size: 11px"><a href="pustakawan.html"><h1 ><i class="fas fa-book-reader"></i></h1></a>Pustakawan</li>
+    <li class="item" style="border: 1px solid #dddddd; font-size: 11px"><a href="forum.html"><h1 ><i class="fas fa-comments"></i></h1></a>Ruang Diskusi</li>
+    <li class="item" style="border: 1px solid #dddddd; font-size: 11px"><a href="literasi.html"><h1 ><i class="fas fa-calendar-week"></i></h1></a>Agenda Kegiatan</li>
+    <li class="item" style="border: 1px solid #dddddd; font-size: 11px"><a href="berita.html"><h1 ><i class="fas fa-bullhorn"></i></h1></a>Berita Terbaru</li>
+    <li class="item" style="border: 1px solid #dddddd; font-size: 11px"><a href="education.html"><h1 ><i class="fas fa-play"></i></h1></a>Pend. Pemakai</li>
   </ul>
 </div>
 
