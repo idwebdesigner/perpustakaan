@@ -21,7 +21,6 @@
   <title>My App</title>
 
   <link rel="stylesheet" href="framework7/css/framework7.bundle.min.css">
-  <link rel="stylesheet" href="css/icons.css">
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/all.css">
   <script type="text/javascript" src="scripts/jquery.min.js"></script>
@@ -56,11 +55,11 @@
             <i class="fas fa-home"></i>
             <span class="tabbar-label">Beranda</span>
           </a>
-          <a href="#view-catalog" class="tab-link">
-            <i class="fas fa-bullhorn"></i>
-            <span class="tabbar-label">Profil</span>
+          <a href="#view-literasi" class="tab-link">
+            <i class="fas fa-book-reader"></i>
+            <span class="tabbar-label">Literasi</span>
           </a>
-          <a href="#view-settings" class="tab-link">
+          <a href="#view-biblio" class="tab-link">
             <i class="fas fa-book-reader"></i>
             <span class="tabbar-label">Biblio</span>
           </a>
@@ -70,7 +69,7 @@
       <div id="view-home" class="view view-main tab tab-active">
         <!-- Page, data-name contains page name which can be used in page callbacks -->
         <div class="page" data-name="home">
-            <img src="images/maps.png" width="100%" style="position: fixed;margin-top: -100px;">
+            <img src="images/maps.png" width="100%" style="position: fixed;margin-top: -50px;">
           <!-- Top Navbar -->
           <div class="navbar" style="background-color: transparent;border: none">
             <div class="navbar-inner">
@@ -91,13 +90,13 @@
           <!-- Scrollable page content-->
           <div class="page-content">
 
-<div class="block" style="background-color: #ffffff;border: 1px solid #eeeeee;margin: 125px 30px 0px 30px">
-    <h3 class="title" style="margin-top: 10px;"><img src="images/21.jpg" width="50px;" style="float: left"></h3>
-    <p style="margin-left: 60px;">Perpustakaan Twenty One Purworejo (TOP)</p>
-    <p class="half-bottom">Jadikan Buku Sahabatmu!</p>
+<div class="block" style="background-color: #ffffff;border: 1px solid #eeeeee;margin: 125px 30px 0px 30px;box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);border-radius: 5px;">
+    <h3 class="title" style="margin-top: 20px;"><img src="images/21.jpg" width="50px;" style="float: left"></h3>
+    <p style="margin-left: 60px;font:bold">Perpustakaan Twenty One Purworejo (TOP)</p>
+    <p class="half-bottom" style="margin-top: 20px;">Jadikan Buku Sahabatmu!</p>
       <div class="input-field">
         <a href="#" class="popup-open" data-popup="#my-popup"><input type="text" id="dummysearch" autocomplete="off" placeholder="Pencarian buku..."></a>
-        <label style="margin-top: 10px;font-size:11px;" for="search">&nbsp;Masukkan kata kunci judul, pengarang, atau penerbit.</label>
+        <label style="margin-top: 20px;font-size:11px;" for="search">&nbsp;Masukkan kata kunci judul, pengarang, atau penerbit.</label>
       </div><br/>
 </div>
 
@@ -120,13 +119,13 @@ Dibuat dengan <i style="color: red;" class="fas fa-heart"></i> di SMPN 21 Purwor
         </div>
       </div>
 
-      <!-- Catalog View -->
-      <div id="view-catalog" class="view tab">
-        <!-- Catalog page will be loaded here dynamically from /catalog/ route -->
+      <!-- Literasi View -->
+      <div id="view-literasi" class="view tab">
+        <!-- Literasi page will be loaded here dynamically from /literasi/ route -->
       </div>
 
       <!-- Settings View -->
-      <div id="view-settings" class="view tab">
+      <div id="view-biblio" class="view tab">
         <!-- Settings page will be loaded here dynamically from /settings/ route -->
       </div>
     </div>
