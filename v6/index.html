@@ -79,10 +79,9 @@
                 </a>
               </div>
               <div class="title sliding" style="font-size: 16px;">SMPN 21 Purworejo</div>
-              <div class="right">
-                <a href="#" class="link icon-only panel-open" data-panel="right">
-                  <i class="icon f7-icons ios-only">menu</i>
-                  <i class="icon material-icons md-only">menu</i>
+              <div class="right" style="margin-right: 20px">
+                <a href="/404/" class="link icon-only panel-open" data-panel="right">
+                  <i class="far fa-user"></i>
                 </a>
               </div>
             </div>
@@ -99,26 +98,18 @@
 
 <div class="content block" style="margin-top: 30px;">
 <div class="container">
-  <div class="row">
-    <div class="col s12">
       <div class="input-field">
-        <input type="text" id="search" autofocus="autofocus" autocomplete="off" placeholder="Pencarian buku...">
+        <a href="#" class="popup-open" data-popup="#my-popup"><input type="text" id="dummysearch" autocomplete="off" placeholder="Pencarian buku..."></a>
         <label style="margin-top: 10px;font-size:11px;" for="search">&nbsp;Masukkan kata kunci judul, pengarang, atau penerbit.</label>
       </div>
-    </div>
-  </div>
 </div>
 </div>
 
-<div class="content block" >
-    <!-- Results --><br/>
-    <div id="results" class="flow-text col s12"></div>
-</div>
-
-<div class="content block" style="margin-top: -40px;">
+<div class="content block" style="margin-top: -0px;">
 <div class="container features-page">
 <a href="/antologi/"><i class="fas fa-feather-alt"></i> Festival Menulis Cerpen <i class="fa fa-angle-right"></i></a>
 <a href="/biblio/"><i class="fas fa-book-reader"></i> Pustakawan Cilik <i class="fa fa-angle-right"></i></a>
+<a href="#" class="popup-open" data-popup="#my-popup">Popup</a>
 </div>
 </div>
 
@@ -142,17 +133,26 @@
     <div class="popup" id="my-popup">
       <div class="view">
         <div class="page">
-          <div class="navbar">
-            <div class="navbar-inner">
-              <div class="title">Popup</div>
-              <div class="right">
-                <a href="#" class="link popup-close">Close</a>
+          <div class="navbar" style="background-color: #ffffff">
+            <div class="navbar-inner" style="padding-left: 20px;">
+              <input type="text" id="search" autofocus="autofocus" autocomplete="off" placeholder="Pencarian buku..." style="border: none">
+              <div class="right" style="position: relative;margin-right: 10px;">
+                <a href="#" class="link popup-close"><i class="fas fa-times"></i></a>
               </div>
             </div>
           </div>
           <div class="page-content">
             <div class="block">
-              <p>Popup content goes here.</p>
+
+      <div class="input-field">
+        <label style="padding-left: 10px;font-size:11px;" for="search">&nbsp;Masukkan kata kunci judul, pengarang, atau penerbit.</label>
+      </div>
+
+<div class="block" >
+    <!-- Results --><br/>
+    <div id="results" class="flow-text col s12"></div>
+</div>
+
             </div>
           </div>
         </div>

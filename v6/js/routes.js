@@ -4,6 +4,18 @@ routes = [
     url: './index.html',
   },
   {
+    path: '/antologi/',
+    url: './pages/antologi.html',
+  },
+  {
+    path: '/biblio/',
+    url: './pages/biblio.html',
+  },
+  {
+    path: '/cari/',
+    url: './pages/cari.html',
+  },
+  {
     path: '/about/',
     url: './pages/about.html',
   },

@@ -12,6 +12,35 @@
 .tabbar-labels {border-top: 1px solid #eeeeee;background-color: #ffffff}
 .block {padding-left: 30px;padding-right: 30px}
 
+input#dummysearch{
+  margin: 0 auto;
+  width: 100%;
+  height: 45px;
+  padding: 0 20px;
+  border-radius: 0px;
+
+  font-size: 0.8rem;
+  border: 1px solid #D0CFCE;
+  outline: none;
+  &:focus{
+    border: 1px solid #008ABF;
+    transition: 0.35s ease;
+    color: #008ABF;
+    &::-webkit-input-placeholder{
+      transition: opacity 0.45s ease;
+  	  opacity: 0;
+     }
+    &::-moz-placeholder {
+      transition: opacity 0.45s ease;
+  	  opacity: 0;
+     }
+    &:-ms-placeholder {
+     transition: opacity 0.45s ease;
+  	 opacity: 0;
+     }
+   }
+ }
+
 .search-container{
   width: 100%;
   display: block;
