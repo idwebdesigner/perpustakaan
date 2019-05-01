@@ -105,7 +105,7 @@
   </div>
 
 <div class="block" style="background-color: #ffffff;opacity: 0.9; border: 1px solid #eeeeee;margin: 75px 30px 0px 30px;box-shadow: 1px 1px 4px rgba(0, 0, 0, .1);border-radius: 5px;">
-    <div class="greeting" style="background-color: #eeeeee;margin-top: -10px;padding: 30px 20px 20px 20px;"><div class="alert alert-info" id="val"><i>Pustakawan</i></div></div>
+    <div class="greeting" style="background-color: #eeeeee;margin-top: -10px;padding: 30px 20px 20px 20px;"><div class="alert alert-info" id="val"><i>Pemustaka</i></div></div>
     <p class="half-bottom" style="margin-top: 20px;">Jadikan Buku Sahabatmu!</p>
       <div class="input-field">
         <a href="#" class="popup-open" data-popup="#my-popup"><input type="text" id="dummysearch" autocomplete="off" placeholder="Pencarian buku..."></a>
@@ -158,23 +158,20 @@ Dibuat dengan <i style="color: red;" class="fas fa-heart"></i> di SMPN 21 Purwor
 <div class="container">
   <div class="page-header">
   <h1>Pengaturan</h1>
-    <div class="alert alert-success" id="yay">Your browser supports Web Storage. Yay!</div>
-    <div class="alert alert-danger" id="ooh">Oooh... Your browser seems to be retarted. He can't use Web Storage.</div>
+    <div id="yay">Your browser supports Web Storage. Yay!</div>
+    <br/>
+    <div class="alert alert-danger" id="ooh">Pemustaka</div>
 </div>
   <div class="row">
     <div class="col-md-6">
-      <h3>save a value</h3>
+      <h3><div class="alert alert-info" id="val2"><h5>Pemustaka</h5></div></h3>
+
       <form action="#" class="form-inline">
         <div class="form-group">
-          <input class="input-field" type="text" name="save" id="text" class="form-control" placeholder="save a value here...">
+          <input style="width: 100%;padding: 12px 20px;margin: 8px 0;box-sizing: border-box;border: 1px solid #eeeeee" type="text" name="save" id="text" class="form-control" placeholder="Nama Lengkap...">
         </div>
-        <button id="set" class="btn btn-primary">save</button>
+        <button id="set" class="button button-fill">Simpan</button>
       </form>
-      <hr>
-      <h3>read the value</h3>
-      <div class="alert alert-info" id="val2"><i>nothing saved...</i></div>
-      <button id="get" class="btn btn-success">get saved value</button>
-       <button id="remove" class="btn btn-danger">clear the value</button>
     </div>
   </div>
 </div>

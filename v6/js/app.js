@@ -108,23 +108,23 @@ if (!typeof(Storage) !== 'undefined') {
 /* set it */
 $('#set').click(function() {
   var test = $('#text').val();
-  localStorage.setItem("test", test);
+  localStorage.setItem("Pemustaka", test);
 });
 
 /* get it */
 $('#get').click(function() {
-  $('#val').text(localStorage.getItem("test"));
+  $('#val').text(localStorage.getItem("Pemustaka"));
 });
 
 /* get it */
 $('#get').click(function() {
-  $('#val2').text(localStorage.getItem("test"));
+  $('#val2').text(localStorage.getItem("Pemustaka"));
 });
 
 /* remove it */
 $('#remove').click(function() {
-  localStorage.removeItem("test");
+  localStorage.removeItem("Pemustaka");
 });
 
-$('#val').text(localStorage.getItem("test"));
-$('#val2').text(localStorage.getItem("test"));
+$('#val').text(localStorage.getItem("Pemustaka"));
+$('#val2').text(localStorage.getItem("Pemustaka"));
