@@ -8,6 +8,8 @@
 
 :root{--f7-bars-shadow-bottom-image:none;}
 :root{--f7-bars-shadow-top-image:none;}
+:root {--f7-theme-color: #c0392b;}
+
 .navbar {border-bottom: 1px solid #eeeeee;background-color: none}
 .tabbar-labels {border-top: 1px solid #eeeeee;background-color: #ffffff}
 .block {padding-left: 30px;padding-right: 30px}
