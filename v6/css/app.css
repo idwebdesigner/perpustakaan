@@ -11,28 +11,13 @@
 .navbar {border-bottom: 1px solid #eeeeee;background-color: none}
 .tabbar-labels {border-top: 1px solid #eeeeee;background-color: #ffffff}
 .block {padding-left: 30px;padding-right: 30px}
-.app {background: linear-gradient(270deg, #007bff, #6f42c1, #e83e8c);
-background-size: 600% 600%;
 
--webkit-animation: AnimationName 30s ease infinite;
--moz-animation: AnimationName 30s ease infinite;
-animation: AnimationName 30s ease infinite;
+/* Scale canvas with resize attribute to full size */
+canvas[resize] {
+    width: 100%;
+    height: 100%;
+}
 
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}}
 
 input#dummysearch{
   margin: 0 auto;
