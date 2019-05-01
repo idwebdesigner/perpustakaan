@@ -27,7 +27,14 @@
 
 </head>
 <body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+
+
+
+
   <div id="app">
+
     <!-- Status bar overlay for fullscreen mode-->
     <div class="statusbar"></div>
     <!-- Left panel with cover effect-->
@@ -69,7 +76,6 @@
       <div id="view-home" class="view view-main tab tab-active">
         <!-- Page, data-name contains page name which can be used in page callbacks -->
         <div class="page" data-name="home">
-            <img src="images/bg.jpg" width="100%" style="position: fixed">
           <!-- Top Navbar -->
           <div class="navbar" style="background-color: transparent;border: none">
             <div class="navbar-inner">
@@ -88,7 +94,7 @@
           </div>
 
           <!-- Scrollable page content-->
-          <div class="page-content">
+          <div class="page-content"><canvas style="position: absolute" class="background"></canvas>
 
 <div class="block" style="background-color: #ffffff;border: 1px solid #eeeeee;margin: 125px 30px 0px 30px;box-shadow: 1px 1px 4px rgba(0, 0, 0, .1);border-radius: 5px;">
     <h3 class="title" style="margin-top: 20px;"><img src="images/21.jpg" width="50px;" style="float: left"></h3>
@@ -112,8 +118,6 @@
 Dibuat dengan <i style="color: red;" class="fas fa-heart"></i> di SMPN 21 Purworejo<br/>Aplikasi versi 6.1
 </p>
 </div>
-
-
 
           </div>
         </div>
@@ -199,6 +203,7 @@ Dibuat dengan <i style="color: red;" class="fas fa-heart"></i> di SMPN 21 Purwor
       </div>
     </div>
   </div>
+
   <!-- Cordova -->
   <!--
   <script src="cordova.js"></script>
@@ -216,5 +221,7 @@ Dibuat dengan <i style="color: red;" class="fas fa-heart"></i> di SMPN 21 Purwor
   <script src='scripts/materialize.min.js'></script>
   <script src='scripts/fuse.min.js'></script>
   <script  src="scripts/databuku.js"></script>
+  <script  src="js/index.js"></script>
+
 </body>
 </html>
