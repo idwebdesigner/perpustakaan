@@ -67,3 +67,31 @@ $$('#my-login-screen .login-button').on('click', function () {
   // Alert username and password
   app.dialog.alert('Username: ' + username + '<br>Password: ' + password);
 });
+
+
+
+var thehours = new Date().getHours();
+	var themessage;
+	var dini = ('Selamat dini hari,');
+	var pagi = ('Selamat pagi,');
+	var siang = ('Selamat siang,');
+	var sore = ('Selamat sore,');
+	var malam = ('Selamat malam,');
+
+	if (thehours >= 0 && thehours < 5) {
+		themessage = dini;
+
+	} else if (thehours >= 5 && thehours < 10) {
+		themessage = pagi;
+
+	} else if (thehours >= 10 && thehours < 14) {
+		themessage = siang;
+
+	} else if (thehours >= 14 && thehours < 19) {
+		themessage = sore;
+
+	} else if (thehours >= 19 && thehours < 24) {
+		themessage = malam;
+	}
+
+	$('.greeting').append(themessage);
