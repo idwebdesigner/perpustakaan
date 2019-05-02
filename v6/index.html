@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="css/wave.css">
   <link disabled id="dark-reader" href="css/dark.css" rel="stylesheet" type="text/css">
 
-  <script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.js"></script>
 
 </head>
 <body>
@@ -109,7 +109,7 @@
     <div class="greeting" style="background-color: #eeeeee;margin-top: -10px;padding: 30px 20px 20px 20px;"><div class="alert alert-info" id="val"><i>Pemustaka</i></div></div>
     <p class="half-bottom" style="margin-top: 20px;">Jadikan Buku Sahabatmu!</p>
       <div class="input-field">
-        <a href="#" class="popup-open" data-popup="#my-popup"><input type="text" id="dummysearch" autocomplete="off" placeholder="Pencarian buku..."></a>
+        <a style="width: 100%" href="#" data-popup="#my-popup2" class="link icon-only popup-open"><input type="text" id="dummysearch" autocomplete="off" placeholder="Pencarian buku..."></a>
         <label style="margin-top: 20px;font-size:11px;" for="search">&nbsp;Masukkan kata kunci judul, pengarang, atau penerbit.</label>
       </div><br/>
 </div>
@@ -156,73 +156,76 @@ Dibuat dengan <i style="color: red;" class="fas fa-heart"></i> di SMPN 21 Purwor
           <div class="page-content">
             <div class="block">
 
-<div class="container">
-  <div class="page-header">
-  <h1 style="text-align: left">Pengaturan</h1>
-    <div>Your browser supports Web Storage. Yay!</div>
-    <br/>
-    <div class="alert alert-danger" id="ooh">Pemustaka</div>
-</div>
-  <div class="row">
-    <div class="col-md-6">
-      <h3><div class="alert alert-info" id="val2"><h5>Pemustaka</h5></div></h3>
+                <div class="container">
+                  <div class="page-header">
+                  <h1 style="text-align: left">Pengaturan</h1>
+                    <div>Your browser supports Web Storage. Yay!</div>
+                    <br/>
+                    <div class="alert alert-danger" id="ooh">Pemustaka</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <h3><div class="alert alert-info" id="val2"><h5>Pemustaka</h5></div></h3>
 
-      <form action="#" class="form-inline">
-        <div class="form-group">
-          <input style="width: 100%;padding: 12px 20px;margin: 8px 0;box-sizing: border-box;border: 1px solid #eeeeee" type="text" name="save" id="text" class="form-control" placeholder="Nama Lengkap...">
-        </div>
-        <button id="set" class="button button-fill">Ubah nama</button>
-      </form>
-    </div>
-  </div>
-</div>
+                      <form action="#" class="form-inline">
+                        <div class="form-group">
+                          <input style="width: 100%;padding: 12px 20px;margin: 8px 0;box-sizing: border-box;border: 1px solid #eeeeee" type="text" name="save" id="text" class="form-control" placeholder="Nama Lengkap...">
+                        </div>
+                        <button id="set" class="button button-fill">Ubah nama</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
 
-<h6>Pengaturan mode gelap</h6>
-<div>Mode gelap (dark mode) adalah pilihan untuk mengubah tampilan agar berwarna gelap. Aktifkan fitur ini untuk menerapkan skema warna gelap di aplikasi.</div>
-<br/>
-<label href="javascript:void(0)" onclick="dark_toggle();return false;" title="Toggle night mode" class="toggle toggle-init"><input type="checkbox"><span class="toggle-icon"></span></label>
+                <h6>Pengaturan mode gelap</h6>
+                <div>Mode gelap (dark mode) adalah pilihan untuk mengubah tampilan agar berwarna gelap. Aktifkan fitur ini untuk menerapkan skema warna gelap di aplikasi.</div>
+                <br/>
+                <label href="javascript:void(0)" onclick="dark_toggle();return false;" title="Toggle night mode" class="toggle toggle-init"><input type="checkbox"><span class="toggle-icon"></span></label>
 
-<div href="javascript:void(0)" onclick="dark_toggle();return false;" style="margin-left: 50px;margin-top: -19px;">Mode Gelap</div>
+                <div href="javascript:void(0)" onclick="dark_toggle();return false;" style="margin-left: 50px;margin-top: -19px;">Mode Gelap</div>
 
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- Login Screen -->
-    <div class="login-screen" id="my-login-screen">
+    <div class="popup" id="my-popup2">
       <div class="view">
         <div class="page">
-          <div class="page-content login-screen-content">
-            <div class="login-screen-title">Login</div>
-            <div class="list">
-              <ul>
-                <li class="item-content item-input">
-                  <div class="item-inner">
-                    <div class="item-title item-label">Username</div>
-                    <div class="item-input-wrap">
-                      <input type="text" name="username" placeholder="Your username">
-                    </div>
-                  </div>
-                </li>
-                <li class="item-content item-input">
-                  <div class="item-inner">
-                    <div class="item-title item-label">Password</div>
-                    <div class="item-input-wrap">
-                      <input type="password" name="password" placeholder="Your password">
-                    </div>
-                  </div>
-                </li>
-              </ul>
+          <div class="navbar" style="background-color: #ffffff">
+            <div class="navbar-inner" style="padding-left: 20px;">
+              <div class="right" style="position: relative;margin-right: 30px;">
+                <a href="#" class="link popup-close"><i class="fas fa-times"></i></a>
+              </div>
             </div>
-            <div class="list">
-              <ul>
-                <li>
-                  <a href="#" class="item-link list-button login-button">Sign In</a>
-                </li>
-              </ul>
-              <div class="block-footer">Some text about login information.<br>Click "Sign In" to close Login Screen</div>
+          </div>
+          <div class="page-content">
+            <div class="block">
+
+            <div class="container">
+                  <div class="page-header">
+                  <h1 style="text-align: left">Pencarian Buku</h1>
+                    <div>Masukkan kata kunci judul, pengarang, atau penerbit.</div>
+                    <br/>
+                  </div>
+              <div class="row">
+                <div class="col s12">
+                  <div class="input-field">
+                    <input type="text" id="search" autofocus="autofocus" autocomplete="off" placeholder="Pencarian buku...">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container" style="margin-top: -20px">
+                <!-- Results --><br/>
+                <div id="results">
+                <h6>Pengaturan mode gelap</h6>
+                <div>Mode gelap (dark mode) adalah pilihan untuk mengubah tampilan agar berwarna gelap. Aktifkan fitur ini untuk menerapkan skema warna gelap di aplikasi.</div>
+                <br/>
+                </div>
+            </div>
+
             </div>
           </div>
         </div>
@@ -244,7 +247,11 @@ Dibuat dengan <i style="color: red;" class="fas fa-heart"></i> di SMPN 21 Purwor
   <!-- Your custom app scripts -->
   <script src="js/app.js"></script>
 
-  <script src='js/angular.min.js'></script>
+  <script src='scripts/materialize.min.js'></script>
+  <script src='scripts/fuse.min.js'></script>
+  <script  src="scripts/databuku.js"></script>
+
+  <script src="js/angular.min.js"></script>
   <script  src="js/todo.js"></script>
 
 </body>
