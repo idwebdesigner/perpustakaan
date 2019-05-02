@@ -129,3 +129,65 @@ body{font-family:roboto,sans-serif;-webkit-font-smoothing:antialiased;color:#666
 .table{width:100%;margin-bottom:35px}.table-title{font-family:dosis,sans-serif;font-size:12px}.table-sub-title{font-family:dosis,sans-serif;font-weight:700;font-size:12px}.price{font-size:12px}.small-price{position:absolute;margin-left:0;font-size:10px;margin-top:-3px!important}table{font-size:12px;text-shadow:1px 1px 0 #fff;background:#eaebec;border:#ccc 1px solid;margin-bottom:25px}table th{padding:21px 25px 22px;border-bottom:1px solid #e0e0e0}table th:first-child{text-align:center;padding-left:20px}table tr{text-align:center;padding-left:20px}table tr td:first-child{text-align:left;padding-left:20px;border-left:0}table tr td{padding:14px;border-top:1px solid #fff;border-bottom:1px solid #e0e0e0;border-left:0 solid #e0e0e0}table tr.even td{background:#efefef}table tr:last-child td{border-bottom:0}table tr:hover td{background:#f8f8f8}.table-heading{padding-top:10px;padding-bottom:15px}.table-text{color:#6f6f6f}
 
 .calendar{margin-bottom:30px}.calendar-titles a{width:14.28%;float:left;text-align:center;height:40px;line-height:40px;font-size:10px;color:#1f1f1f;font-weight:800}.calendar-titles .light-titles{opacity:.5}.calendar-days{margin-top:-10px;font-size:14px;margin-bottom:30px}.calendar-days a{width:14.28%;float:left;height:60px;line-height:60px;text-align:center;color:#1f1f1f;font-weight:700}.calendar-days a:hover{color:#2980b9}.calendar-day .light-day{opacity:.3}.calendar-days i{position:absolute;font-size:35px;margin-top:12px;margin-left:-7px;z-index:-1}.clear-day i{opacity:0}.light-day{opacity:.3}.light-day i{display:none}.taken-day{color:#fff!important}.taken-day i{color:#27ae60}.close-day{color:#fff!important}.close-day i{color:#c0392b}.calendar-hours{border-top:solid 1px rgba(0,0,0,.1)}.calendar-hour{height:80px;border-bottom:solid 1px rgba(0,0,0,.1)}.calendar-hour-clear:hover{background-color:rgba(39,174,96,.1)}.calendar-hour-taken:hover{background-color:rgba(192,57,43,.1)}.calendar-hour strong{color:#666;opacity:.7}.calendar-hours a:last-child{border-bottom:none}.calendar-hour .cal-time{position:absolute;margin-top:30px;font-weight:400;font-size:11px;padding-left:20px}.calendar-hour .cal-from{position:absolute;margin-top:18px;font-size:11px;font-weight:400;padding-left:20px}.calendar-hour .cal-to{position:absolute;margin-top:40px;font-size:11px;font-weight:400;padding-left:20px}.calendar-hour h4{font-size:14px;padding-left:100px;padding-top:17px;margin-bottom:2px}.calendar-hour em{font-style:normal;font-size:11px;padding-left:100px;color:#666}.calendar-hour em i{margin-right:10px}
+
+input {
+  border: none;
+  display: block;
+  width: 98.4%;
+  line-height: 1.5;
+  padding: 8px 0 8px 10px;
+  border-bottom: 1px solid #cfcbcc;
+  outline: 0;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 0px;
+  line-height: 1;
+}
+
+h2 {
+  color: gray;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  color: #899098;
+  font-weight: 400;
+  border-bottom: 1px solid #cfcbcc;
+  line-height: 1.5;
+  padding: 8px 0;
+}
+ul li:before {
+  content: "\25A1";
+  padding: 10px 10px;
+  font-size: 20px;
+}
+ul li:hover {
+  text-decoration: line-through;
+  cursor: pointer;
+}
+ul li:last-child {
+  border-bottom: none;
+}
+
+.checked {
+  color: green;
+}
+.checked:before {
+  content: "\2713";
+  padding: 10px 10px;
+  font-size: 20px;
+}
+.checked:hover {
+  text-decoration: none;
+}
+.checked:hover:after {
+  content: "(remove)";
+  color: tomato;
+  text-align: right;
+}
