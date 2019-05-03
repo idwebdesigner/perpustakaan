@@ -12,8 +12,12 @@ routes = [
     url: './pages/biblio.html',
   },
   {
-    path: '/cari/',
-    url: './pages/cari.html',
+    path: '/biblio-text/',
+    url: './pages/biblio-text.html',
+  },
+  {
+    path: '/biblio-anggota/',
+    url: './pages/biblio-anggota.html',
   },
   {
     path: '/literasi/',
@@ -23,18 +27,7 @@ routes = [
     path: '/about/',
     url: './pages/about.html',
   },
-  {
-    path: '/catalog/',
-    componentUrl: './pages/catalog.html',
-  },
-  {
-    path: '/product/:id/',
-    componentUrl: './pages/product.html',
-  },
-  {
-    path: '/settings/',
-    url: './pages/settings.html',
-  },
+
   // Page Loaders & Router
   {
     path: '/page-loader-template7/:user/:userId/:posts/:postId/',
