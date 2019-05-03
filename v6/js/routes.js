@@ -17,15 +17,43 @@ routes = [
   },
   {
     path: '/biblio-anggota/',
-    url: './pages/biblio-anggota.html',
+    url: 'http://app.smpn21purworejo.sch.id/v6/pages/biblio-anggota.html',
   },
   {
     path: '/literasi/',
     url: './pages/literasi.html',
   },
   {
-    path: '/about/',
-    url: './pages/about.html',
+    path: '/edu/',
+    url: './pages/edu.html',
+  },
+  {
+    path: '/berita/',
+    url: './pages/berita.html',
+  },
+  {
+    path: '/galeri-kartu/',
+    url: './pages/galeri-kartu.html',
+  },
+  {
+    path: '/istilah/',
+    url: './pages/istilah.html',
+  },
+  {
+    path: '/one/',
+    url: './pages/one.html',
+  },
+  {
+    path: '/profil/',
+    url: './pages/profil.html',
+  },
+  {
+    path: '/pustakawan/',
+    url: './pages/pustakawan.html',
+  },
+  {
+    path: '/statistik/',
+    url: './pages/statistik.html',
   },
 
   // Page Loaders & Router
