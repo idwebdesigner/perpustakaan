@@ -135,3 +135,72 @@ function dark_toggle() {
  } else {
      document.getElementById("dark-reader").disabled = true;
  }
+
+
+
+
+		var customTooltips = function(tooltip) {
+			$(this._chart.canvas).css('cursor', 'pointer');
+
+			var positionY = this._chart.canvas.offsetTop;
+			var positionX = this._chart.canvas.offsetLeft;
+
+			$('.chartjs-tooltip').css({
+				opacity: 0,
+			});
+
+			if (!tooltip || !tooltip.opacity) {
+				return;
+			}
+
+			if (tooltip.dataPoints.length > 0) {
+				tooltip.dataPoints.forEach(function(dataPoint) {
+					var content = [dataPoint.xLabel, dataPoint.yLabel].join(': ');
+					var $tooltip = $('#tooltip-' + dataPoint.datasetIndex);
+
+					$tooltip.html(content);
+					$tooltip.css({
+						opacity: 1,
+						top: positionY + dataPoint.y + 'px',
+						left: positionX + dataPoint.x + 'px',
+					});
+				});
+			}
+		};
+		var color = Chart.helpers.color;
+		var lineChartData = {
+			labels: ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun'],
+			datasets: [{
+				label: 'Laki-laki',
+				backgroundColor: color(window.chartColors.red).alpha(0.2).rgbString(),
+				borderColor: window.chartColors.red,
+				pointBackgroundColor: window.chartColors.red,
+				data: [22, 5, 33, 5, 22, 3]
+			}, {
+				label: 'Perempuan',
+				backgroundColor: color(window.chartColors.blue).alpha(0.2).rgbString(),
+				borderColor: window.chartColors.blue,
+				pointBackgroundColor: window.chartColors.blue,
+				data: [12, 19, 13, 5, 42, 6]
+			}]
+		};
+
+		window.onload = function() {
+			var chartEl = document.getElementById('chart1');
+			new Chart(chartEl, {
+				type: 'line',
+				data: lineChartData,
+				options: {
+					title: {
+						display: true,
+						text: 'Januari - Juni, 2019'
+					},
+					tooltips: {
+						enabled: false,
+						mode: 'index',
+						intersect: false,
+						custom: customTooltips
+					}
+				}
+			});
+		};
