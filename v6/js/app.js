@@ -1,5 +1,5 @@
 $(document).ready(function(){
-   $('#kalender').load("pages/kalender.html");
+   $('#kalender').load("load/kalender.html");
 });
 
 
