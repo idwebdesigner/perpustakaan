@@ -1,3 +1,9 @@
+$(document).ready(function(){
+   $('#kalender').load("pages/kalender.html");
+});
+
+
+
 // Dom7
 var $$ = Dom7;
 

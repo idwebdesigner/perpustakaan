@@ -19,7 +19,7 @@ routes = [
     path: '/biblio-anggota/',
     url: 'http://app.smpn21purworejo.sch.id/v6/pages/biblio-anggota.html',
   },
-  {
+ {
     path: '/literasi/',
     url: './pages/literasi.html',
   },
