@@ -9,7 +9,7 @@ var search = null;
 
 
 
-{name: '<a href="http://smpn21purworejo.sch.id/library/app.php?p=show_detail&id= 2410 "> Arimbi </a>',nat: ' Arimbi ',cat: ' Anjar Lembayung ',typing: [' Scritto , Yogyakarta ',' - SR 813 ANJ a ']},
+{name: '<a class="link external" href="http://smpn21purworejo.sch.id/library/app.php?p=show_detail&id= 2410 "> Arimbi </a>',nat: ' Arimbi ',cat: ' Anjar Lembayung ',typing: [' Scritto , Yogyakarta ',' - SR 813 ANJ a ']},
 {name: '<a href="http://smpn21purworejo.sch.id/library/app.php?p=show_detail&id= 2411 "> Trik Dasyat Mempertajam Daya Ingat Hafalan Pelajaran </a>',nat: ' Trik Dasyat Mempertajam Daya Ingat Hafalan Pelajaran ',cat: ' Nurla Isna Auniliah ',typing: [' Araska , Yogyakarta ',' - SR 153.1 NUR t ']},
 {name: '<a href="http://smpn21purworejo.sch.id/library/app.php?p=show_detail&id= 2408 "> Darah; Sebuah Kumcer Psikopat </a>',nat: ' Darah; Sebuah Kumcer Psikopat ',cat: ' Baiq Cynthia ',typing: [' Scritto , Yogyakarta ',' - SR 808.83 BAI d ']},
 {name: '<a href="http://smpn21purworejo.sch.id/library/app.php?p=show_detail&id= 2409 "> Lucu-Lucu Tokoh Dunia </a>',nat: ' Lucu-Lucu Tokoh Dunia ',cat: ' Isa An. Tamami ',typing: [' Araska , Yogyakarta ',' - SR 817 ISA l ']},

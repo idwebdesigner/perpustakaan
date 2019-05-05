@@ -204,3 +204,18 @@ function dark_toggle() {
 				}
 			});
 		};
+
+
+
+function updateOnlineStatus()
+{
+    document.getElementById("statusku").innerHTML = "Online";
+}
+
+function updateOfflineStatus()
+{
+    document.getElementById("statusku").innerHTML = "Offline";
+}
+
+window.addEventListener('online',  updateOnlineStatus);
+window.addEventListener('offline', updateOfflineStatus);
