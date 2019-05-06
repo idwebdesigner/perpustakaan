@@ -29,8 +29,7 @@
     var storedValues = window.localStorage.myitems;
     if(!storedValues) {
       list.innerHTML = '<li>Mengunjungi perpustakaan</li>'+
-                       '<li>Mengembalikan buku perpustakaan</li>'+
-                       '<li>Meminjam novel</li>';
+                       '<li>Meminjam buku</li>';
     }
     else {
       list.innerHTML = storedValues;
