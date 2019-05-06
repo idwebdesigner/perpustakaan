@@ -1,11 +1,22 @@
 <div class="page" data-name="literasi">
   <div class="navbar">
     <div class="navbar-inner sliding">
-      <div class="left">
+      <div class="left" style="width: 80%">
 
-  <form action="#" style="margin-left: 20px;">
-    <input style="border-bottom: 1px solid #000000;height: 40px;font-size: 12px;width: 200px" type="text" name="item" id="item" placeholder="Tambah agenda..." />
-</form>
+  <form action="#" style="margin-left: 20px;width: 80%">
+    <input style="border-bottom: 1px solid #999999;height: 40px;font-size: 12px;" type="text" name="item" id="item" placeholder="Tambah agenda..." />
+    <button style="background-color: transparent;float: right; margin-top: -25px;margin-right: -40%;font-size: 12px;color: #555555;" id="tombol" onclick="javascript:alert('Hello World!')"><i class="fas fa-plus"></i></button>
+
+  </form>
+    <script>
+    var input = document.getElementById("item");
+    input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+       event.preventDefault();
+       document.getElementById("tombol").click();
+      }
+    });
+    </script>
 
       </div>
               <div class="right" style="float: right;margin-right: 50px; font-size: 18px">
@@ -121,3 +132,14 @@
   </div>
 
 </div>
+
+<script>
+var dialog = app.dialog.create({
+  text: 'Hello World',
+  on: {
+    opened: function () {
+      console.log('Dialog opened')
+    }
+  }
+})
+</script>

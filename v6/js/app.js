@@ -223,3 +223,16 @@ window.addEventListener('offline', updateOfflineStatus);
 
 
 
+// Alert
+$$('.open-alert').on('click', function () {
+  app.dialog.alert('Hello');
+});
+
+var dialog = app.dialog.create({
+  text: 'Hello World',
+  on: {
+    opened: function () {
+      console.log('Dialog opened')
+    }
+  }
+})
