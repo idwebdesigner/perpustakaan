@@ -1,9 +1,3 @@
-$(document).ready(function(){
-   $('#kalender').load("load/kalender.html");
-});
-
-
-
 // Dom7
 var $$ = Dom7;
 
@@ -225,3 +219,7 @@ function updateOfflineStatus()
 
 window.addEventListener('online',  updateOnlineStatus);
 window.addEventListener('offline', updateOfflineStatus);
+
+
+
+

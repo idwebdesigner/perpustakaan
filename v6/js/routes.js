@@ -40,6 +40,10 @@ routes = [
     url: './pages/istilah.html',
   },
   {
+    path: '/kalender/',
+    url: './pages/kalender.html',
+  },
+  {
     path: '/one/',
     url: './pages/one.html',
   },
