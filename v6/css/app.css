@@ -136,6 +136,8 @@ body{font-family:roboto,sans-serif;-webkit-font-smoothing:antialiased;color:#666
 
 .user-list-socials img{float:left;width:50px;height:50px;border-radius:50px}.user-list-socials strong{float:left;font-size:14px;color:#1f1f1f;padding-left:10px}.user-list-socials strong em{font-size:11px;font-style:normal;color:#666;margin-top:-10px;display:block;font-weight:400}.user-list-socials .icon1{float:right;font-size:10px;height:30px;width:30px;text-align:center;margin-top:10px;line-height:30px;border-radius:30px;color:#fff;margin-left:5px}.user-list-socials .icon2{float:right;font-size:10px;height:30px;width:30px;text-align:center;margin-top:10px;line-height:30px;border-radius:30px;color:#fff}
 
+.speach-left{float:left;display:inline;text-align:left;max-width:75%;font-size:12px;padding-left:10px;padding-right:10px;padding-top:5px;padding-bottom:5px;border-radius:10px;background-color:#fff;border:solid 1px #cacaca}.speach-left-title{display:block;width:100%;font-size:10px;font-style:normal;padding-left:5px;color:#000;text-shadow:0 1px 0 #fff;margin-bottom: -10px;}.speach-right{float:right;text-align:right;text-align:left;max-width:75%;font-size:12px;padding-left:10px;padding-right:10px;padding-top:5px;padding-bottom:5px;border-radius:10px;background-color:#fff;border:solid 1px #cacaca}.speach-right-title{text-align:right;display:block;font-size:10px;font-style:normal;padding-right:5px;color:#000;text-shadow:0 1px 0 #fff;margin-bottom: -10px;}.quote-style-one{margin-bottom:30px}
+
 input {
   border: none;
   display: block;
