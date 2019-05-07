@@ -138,6 +138,8 @@ body{font-family:roboto,sans-serif;-webkit-font-smoothing:antialiased;color:#666
 
 .speach-left{float:left;display:inline;text-align:left;max-width:75%;font-size:12px;padding-left:10px;padding-right:10px;padding-top:5px;padding-bottom:5px;border-radius:10px;background-color:#fff;border:solid 1px #cacaca}.speach-left-title{display:block;width:100%;font-size:10px;font-style:normal;padding-left:5px;color:#000;text-shadow:0 1px 0 #fff;margin-bottom: -10px;}.speach-right{float:right;text-align:right;text-align:left;max-width:75%;font-size:12px;padding-left:10px;padding-right:10px;padding-top:5px;padding-bottom:5px;border-radius:10px;background-color:#fff;border:solid 1px #cacaca}.speach-right-title{text-align:right;display:block;font-size:10px;font-style:normal;padding-right:5px;color:#000;text-shadow:0 1px 0 #fff;margin-bottom: -10px;}.quote-style-one{margin-bottom:30px}
 
+.chart em{font-size:13px;text-align:right;font-style:normal;display:block;margin-bottom:10px;margin-top:-20px;font-weight:300;font-family:source sans pro,sans-serif;padding-right:5px}.chart-background{background-color:#ccc;width:100%;display:block;height:22px;margin-bottom:20px;margin-top:-5px}.red-chart{background-color:#c0392b;margin:3px;height:16px;opacity:.9}.green-chart{background-color:#27ae60;margin:3px;height:16px;opacity:.9}.yellow-chart{background-color:#f39c12;margin:3px;height:16px;opacity:.9}.magenta-chart{background-color:#8e44ad;margin:3px;height:16px;opacity:.9}.blue-chart{background-color:#2980b9;margin:3px;height:16px;opacity:.9}.chart-round div{border-radius:20px}.p100{width:100%}.p90{width:90%}.p80{width:80%}.p70{width:70%}.p60{width:60%}.p50{width:50%}.p40{width:40%}.p30{width:30%}.p20{width:20%}.p10{width:10%}.p0{width:0%}
+
 input {
   border: none;
   display: block;
@@ -226,3 +228,31 @@ ul li:last-child {
 			width: 10px;
 			height: 10px;
 		}
+
+/* dari index.html */
+.pattern{
+    background-image: url(../images/bg.JPG); background-size:cover; background-repeat: no-repeat; background-position:center; position: fixed; width: 100%;margin-top: -55px;-webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+.judulsekolah{
+    color: #ffffff;position: fixed;margin-top: -15px; margin-left: 80px;opacity: 0.5
+}
+.kotakcari{
+    background-color: #ffffff;opacity: 0.9; border: 1px solid #eeeeee;margin: 75px 30px 0px 30px;box-shadow: 1px 1px 4px rgba(0, 0, 0, .1);border-radius: 5px;
+}
+.kolomnama{
+    background-color: #eeeeee;margin-top: -30px;padding: 30px 20px 20px 20px;border-radius: 5px;
+}
+.carispan{
+    font-size: 16px;margin-right: 10px;color: #dddddd;
+}
+.inginbaca{
+    margin-top: 20px;font-size: 14px;
+}
+.lcnama{text-align: left;margin-top: -30px}
+.ketbawah{text-align: center;margin-top: -50px; margin-bottom: 30px;font-size: 12px;}
+.pengumuman{
+    margin-top: 20px;font-size:11px;
+}
+.yukcari{
+    font-size: 12px;margin-left: 10px;color: #999999;
+}

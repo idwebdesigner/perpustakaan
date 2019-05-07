@@ -5,7 +5,7 @@ routes = [
   },
   {
     path: '/antologi/',
-    url: 'http://app.smpn21purworejo.sch.id/v6//pages/antologi.html',
+    url: './pages/antologi.html',
   },
   {
     path: '/biblio/',
@@ -13,15 +13,15 @@ routes = [
   },
   {
     path: '/biblio-text/',
-    url: 'http://app.smpn21purworejo.sch.id/v6//pages/biblio-text.html',
+    url: './pages/biblio-text.html',
   },
   {
     path: '/biblio-anggota/',
-    url: 'http://app.smpn21purworejo.sch.id/v6/pages/biblio-anggota.html',
+    url: './pages/biblio-anggota.html',
   },
  {
     path: '/chat/',
-    url: 'http://app.smpn21purworejo.sch.id/v6//pages/chat.html',
+    url: './pages/chat.html',
   },
  {
     path: '/literasi/',
@@ -29,39 +29,39 @@ routes = [
   },
   {
     path: '/edu/',
-    url: 'http://app.smpn21purworejo.sch.id/v6//pages/edu.html',
+    url: './pages/edu.html',
   },
   {
     path: '/berita/',
-    url: 'http://app.smpn21purworejo.sch.id/v6//pages/berita.html',
+    url: './pages/berita.html',
   },
   {
     path: '/galeri-kartu/',
-    url: 'http://app.smpn21purworejo.sch.id/v6//pages/galeri-kartu.html',
+    url: './pages/galeri-kartu.html',
   },
   {
     path: '/istilah/',
-    url: 'http://app.smpn21purworejo.sch.id/v6//pages/istilah.html',
+    url: './pages/istilah.html',
   },
   {
     path: '/kalender/',
-    url: 'http://app.smpn21purworejo.sch.id/v6//pages/kalender.html',
+    url: './pages/kalender.html',
   },
   {
     path: '/one/',
-    url: 'http://app.smpn21purworejo.sch.id/v6//pages/one.html',
+    url: './pages/one.html',
   },
   {
     path: '/profil/',
-    url: 'http://app.smpn21purworejo.sch.id/v6/pages/profil.html',
+    url: './pages/profil.html',
   },
   {
     path: '/pustakawan/',
-    url: 'http://app.smpn21purworejo.sch.id/v6//pages/pustakawan.html',
+    url: './pages/pustakawan.html',
   },
   {
     path: '/statistik/',
-    url: 'http://app.smpn21purworejo.sch.id/v6//pages/statistik.html',
+    url: './pages/statistik.html',
   },
 
   // Page Loaders & Router
