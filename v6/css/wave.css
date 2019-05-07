@@ -48,6 +48,7 @@
 }
 .waveTop {
     background-size: 50% 100px;
+    background-image: url('../images/pictures/wave-top.png')
 }
 .waveAnimation .waveTop {
   animation: move-wave 3s;
@@ -57,12 +58,14 @@
 }
 .waveMiddle {
     background-size: 50% 120px;
+    background-image: url('../images/pictures/wave-mid.png')
 }
 .waveAnimation .waveMiddle {
     animation: move_wave 10s linear infinite;
 }
 .waveBottom {
     background-size: 50% 100px;
+    background-image: url('../images/pictures/wave-bot.png')
 }
 .waveAnimation .waveBottom {
     animation: move_wave 15s linear infinite;

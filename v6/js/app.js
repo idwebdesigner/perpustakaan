@@ -86,6 +86,8 @@ var thehours = new Date().getHours();
 
 
 
+
+
 /* Detect browser can use web storage */
 if (!typeof(Storage) !== 'undefined') {
   $('#yay').fadeIn('slow');
@@ -236,3 +238,9 @@ var dialog = app.dialog.create({
     }
   }
 })
+
+
+
+$(document).ready(function(){
+   $('#ambil').load("http://app.smpn21purworejo.sch.id/v6/pengumuman.html");
+});
