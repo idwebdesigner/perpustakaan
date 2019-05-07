@@ -252,3 +252,7 @@ var dialog = app.dialog.create({
 $(document).ready(function(){
    $('#ambil').load("http://app.smpn21purworejo.sch.id/v6/pages/pengumuman.html");
 });
+
+   function onBackKeyDown() {
+      mainView.router.navigate('/', {});
+}
