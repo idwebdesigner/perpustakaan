@@ -2,20 +2,6 @@
   <div class="navbar">
     <div class="navbar-inner sliding">
       <div class="left" style="width: 80%">
-
-  <form action="#" style="margin-left: 20px;width: 80%">
-    <input style="border-bottom: 1px solid #999999;height: 40px;font-size: 12px;" type="text" name="item" id="item" placeholder="Tambah agenda..." />
-  </form>
-    <script>
-    var input = document.getElementById("item");
-    input.addEventListener("keyup", function(event) {
-      if (event.keyCode === 13) {
-       event.preventDefault();
-       document.getElementById("tombol").click();
-      }
-    });
-    </script>
-
       </div>
               <div class="right" style="float: right;margin-right: 50px; font-size: 18px">
                 <a href="/kalender/" style="color: #000000">
@@ -37,15 +23,15 @@
 </div>
 </div>
 
-      <div class="block" style="background-color: #eeeeee;opacity: 0.9; border: 1px solid #eeeeee;margin: 0px 30px 0px 30px;border-radius: 5px;">
+      <div class="block" style="color: #000000; background-color: #ECE63D;opacity: 0.9; margin: 0px 30px 0px 30px;border-radius: 5px;list-style-type: none; ">
 
   <form action="#" style="margin-top: 20px;">
-        <button style="position: absolute; background-color: transparent;float: right; padding-top: 13px;margin-left: 45%; font-size: 12px;color: #555555;z-index: 9000" id="tombol" onclick="javascript:alert('Agenda tersimpan!')"><i class="fas fa-plus"></i></button>
+        <button style="position: absolute; background-color: transparent;float: right; padding-top: 13px;margin-left: 90%; font-size: 12px;color: #555555;z-index: 9000;width: 30px;" id="tombol"><i class="fas fa-plus"></i></button>
 
     <input style="border-bottom: 1px solid #ffffff;height: 40px" type="text" name="item" id="item" placeholder="Tambah agenda..." />
 
 </form>
-<ul id="list" style="list-style-type: none; margin-bottom: 20px;border-bottom: 1px solid #cccccc"></ul>
+<ul id="list" style="margin-bottom: 20px;border-bottom: 1px solid #cccccc"></ul>
 <div style="font-size: 10px;margin-top: 0px;margin-bottom: 20px;">Tips: Tekan enter untuk menambahkan daftar</div>
       </div>
 
@@ -133,14 +119,3 @@
   </div>
 
 </div>
-
-<script>
-var dialog = app.dialog.create({
-  text: 'Hello World',
-  on: {
-    opened: function () {
-      console.log('Dialog opened')
-    }
-  }
-})
-</script>
