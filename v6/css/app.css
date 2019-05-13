@@ -166,7 +166,7 @@ ul {
   padding: 0;
 }
 ul li {
-  color: #899098;
+  color: #ffffff;
   font-weight: 400;
   border-bottom: 1px solid #cfcbcc;
   line-height: 1.5;
@@ -256,4 +256,7 @@ ul li:last-child {
 .yukcari{
     font-size: 12px;margin-left: 10px;color: #999999;
 }
-
+.todo{color: #ffffff; background-color: #c0392b;opacity: 0.9; margin: 10px 0px 10px 0px;border-radius: 5px;list-style-type: none; }
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ffffff;
+}

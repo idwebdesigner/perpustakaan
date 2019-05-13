@@ -256,3 +256,10 @@ $(document).ready(function(){
    function onBackKeyDown() {
       mainView.router.navigate('/', {});
 }
+
+var app = new Framework7({
+  lazy: {
+      treshold: 50,
+      sequential: false,
+  }
+})
