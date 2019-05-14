@@ -63,6 +63,46 @@ routes = [
     path: '/statistik/',
     url: 'http://app.smpn21purworejo.sch.id/v6/pages/statistik.html',
   },
+  {
+    path: '/blank1/',
+    url: 'http://app.smpn21purworejo.sch.id/v6/pages/blank1.html',
+  },
+  {
+    path: '/blank2/',
+    url: 'http://app.smpn21purworejo.sch.id/v6/pages/blank2.html',
+  },
+  {
+    path: '/blank3/',
+    url: 'http://app.smpn21purworejo.sch.id/v6/pages/blank3.html',
+  },
+  {
+    path: '/blank4/',
+    url: 'http://app.smpn21purworejo.sch.id/v6/pages/blank4.html',
+  },
+  {
+    path: '/blank5/',
+    url: 'http://app.smpn21purworejo.sch.id/v6/pages/blank5.html',
+  },
+  {
+    path: '/blank6/',
+    url: 'http://app.smpn21purworejo.sch.id/v6/pages/blank6.html',
+  },
+  {
+    path: '/blank7/',
+    url: 'http://app.smpn21purworejo.sch.id/v6/pages/blank7.html',
+  },
+  {
+    path: '/blank8/',
+    url: 'http://app.smpn21purworejo.sch.id/v6/pages/blank8.html',
+  },
+  {
+    path: '/blank9/',
+    url: 'http://app.smpn21purworejo.sch.id/v6/pages/blank9.html',
+  },
+  {
+    path: '/blank10/',
+    url: 'http://app.smpn21purworejo.sch.id/v6/pages/blank10.html',
+  },
 
   // Page Loaders & Router
   {
