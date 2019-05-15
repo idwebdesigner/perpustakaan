@@ -61,7 +61,7 @@ routes = [
   },
   {
     path: '/statistik/',
-    url: 'http://app.smpn21purworejo.sch.id/v6/pages/statistik.html',
+    url: './pages/statistik.html',
   },
   {
     path: '/blank1/',
