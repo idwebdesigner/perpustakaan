@@ -9,7 +9,7 @@
   paddingg-left: -20px;
   opacity: 0.9;
         toolbar: {
-          show: false,
+          show: true,
           tools: {
             download: true,
             selection: true,
@@ -27,4 +27,8 @@
 #timeline-chart .apexcharts-toolbar {
   opacity: 1;
   border: 0;
+}
+
+apexcharts-inner apexcharts-graphical {
+    padding-left: -20px;
 }
