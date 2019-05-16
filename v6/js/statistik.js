@@ -1,36 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <!--
-  Customize this policy to fit your own app's needs. For more guidance, see:
-      https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-  Some notes:
-      * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-      * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-      * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-          * Enable inline JS: add 'unsafe-inline' to default-src
-  -->
-  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="msapplication-tap-highlight" content="no">
-  <title>My App</title>
-
-  <link rel="stylesheet" href="framework7/css/framework7.bundle.min.css">
-  <link rel="stylesheet" href="css/app.css">
-  <link rel="stylesheet" href="css/all.css">
-  <link rel="stylesheet" href="css/wave.css">
-  <link disabled id="dark-reader" href="css/dark.css" rel="stylesheet" type="text/css">
-
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
       google.charts.load("current", {packages:["corechart"]});
       google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
+      function drawChart()
+      {
         var data = google.visualization.arrayToDataTable([
           ['Task', 'Hours per Day'],
           ['Fiksi',     175],
@@ -47,11 +18,8 @@
         var chart = new google.visualization.PieChart(document.getElementById('tipekoleksi'));
         chart.draw(data, options);
       }
-    </script>
-    <script type="text/javascript">
-      google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
+
+      {
         var data = google.visualization.arrayToDataTable([
           ['Task', 'Hours per Day'],
           ['Fiksi',     388],
@@ -68,11 +36,8 @@
         var chart = new google.visualization.PieChart(document.getElementById('tipekoleksieksemplar'));
         chart.draw(data, options);
       }
-    </script>
-    <script type="text/javascript">
-      google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
+
+      {
         var data = google.visualization.arrayToDataTable([
           ['Task', 'Hours per Day'],
           ['Indonesia',     1071],
@@ -87,11 +52,8 @@
         var chart = new google.visualization.PieChart(document.getElementById('tipekoleksibahasa'));
         chart.draw(data, options);
       }
-    </script>
-    <script type="text/javascript">
-      google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
+
+      {
         var data = google.visualization.arrayToDataTable([
           ['Task', 'Hours per Day'],
           ['Total Eksemplar Dipinjam',     3101],
@@ -106,11 +68,8 @@
         var chart = new google.visualization.PieChart(document.getElementById('dipinjam'));
         chart.draw(data, options);
       }
-    </script>
-    <script type="text/javascript">
-      google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
+
+      {
         var data = google.visualization.arrayToDataTable([
           ['Task', 'Hours per Day'],
           ['Fiksi',     344],
@@ -127,8 +86,7 @@
         var chart = new google.visualization.PieChart(document.getElementById('koleksi'));
         chart.draw(data, options);
       }
-    </script>
-    <script type="text/javascript">
+
       google.charts.load("current", {packages:["corechart"]});
       google.charts.setOnLoadCallback(drawChart);
       function drawChart() {
@@ -148,11 +106,8 @@
         var chart = new google.visualization.PieChart(document.getElementById('anggota'));
         chart.draw(data, options);
       }
-    </script>
-    <script type="text/javascript">
-      google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
+
+      {
         var data = google.visualization.arrayToDataTable([
           ['Task', 'Hours per Day'],
           ['Anggota Yang Meminjam',     492],
@@ -167,8 +122,7 @@
         var chart = new google.visualization.PieChart(document.getElementById('anggotapinjam'));
         chart.draw(data, options);
       }
-    </script>
-    <script type="text/javascript">
+
         google.charts.load('current', {packages: ['corechart', 'bar']});
         google.charts.setOnLoadCallback(drawBasic);
 
@@ -205,12 +159,8 @@
 
       chart.draw(data, options);
     }
-    </script>
-    <script type="text/javascript">
-        google.charts.load('current', {packages: ['corechart', 'bar']});
-        google.charts.setOnLoadCallback(drawAxisTickColors);
 
-        function drawAxisTickColors() {
+        {
       var data = google.visualization.arrayToDataTable([
         ['City', 'Guru/Karyawan', 'Siswa kelas 7', 'Siswa kelas 8', 'Siswa kelas 9'],
         ['Januari', 15, 208, 300, 183],
@@ -254,12 +204,8 @@
       var chart = new google.visualization.BarChart(document.getElementById('totaltipekunjungan'));
       chart.draw(data, options);
     }
-    </script>
-    <script type="text/javascript">
-        google.charts.load('current', {packages: ['corechart', 'bar']});
-        google.charts.setOnLoadCallback(drawAxisTickColors);
 
-        function drawAxisTickColors() {
+        {
       var data = google.visualization.arrayToDataTable([
         ['City', 'Guru/Karyawan', 'Siswa kelas 7', 'Siswa kelas 8', 'Siswa kelas 9'],
         ['Juli', 0, 0, 35, 0],
@@ -304,106 +250,3 @@
       var chart = new google.visualization.BarChart(document.getElementById('totaltipekunjungan2'));
       chart.draw(data, options);
     }
-    </script>
-
-</head>
-<body>
-  <div id="app">
-
-    <!-- Status bar overlay for fullscreen mode-->
-    <div class="statusbar"></div>
-
-    <!-- Views/Tabs container -->
-    <div class="views tabs safe-areas">
-      <!-- Your main view/tab, should have "view-main" class. It also has "tab-active" class -->
-      <div id="view-home" class="view view-main tab tab-active">
-        <!-- Page, data-name contains page name which can be used in page callbacks -->
-        <div class="page" data-name="home">
-          <!-- Top Navbar -->
-          <div class="navbar" style="background-color: #ffffff">
-            <div class="navbar-inner" style="padding-left: 20px;">
-              <div class="right" style="position: relative;margin-right: 30px;">
-                <a onclick="window.history.back();return false" class="link"><i class="fas fa-times"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Scrollable page content-->
-          <div class="page-content">
-
-<div class="content" style="margin-top:20px;">
-
-  <div class="page-header">
-  <h1 style="text-align: left">Statistik Koleksi</h1>
-    <div>Perpustakaan SMPN 21 Purworejo</div>
-    <br/>
-  </div>
-
-    <h6>Diperbaharui 16 Mei 2019 10:55 WIB</h6>
-    <p>Total Judul buku: 1080<br/>
-       Total Eksemplar/Kopi	:	10436</p>
-
-    <div id="tipekoleksi" style="width: 100%; height: 500px;margin-bottom:-110px;"></div>
-   <div id="tipekoleksieksemplar" style="width: 100%; height: 500px;margin-bottom:-110px;"></div>
-    <div id="tipekoleksibahasa" style="width: 100%; height: 500px;margin-bottom:-110px;"></div>
-
-  <div class="page-header">
-  <h1 style="text-align: left;margin-top: 50px">Statistik Peminjaman</h1>
-    <div>Perpustakaan SMPN 21 Purworejo</div>
-    <br/>
-  </div>
-
-    <p>Total Peminjaman	:	6527<br/>
-    Total Transaksi Peminjaman	:	1796<br/>
-    Rata-Rata Transaksi Per Hari	:	14</p>
-
-    <div id="dipinjam" style="width: 100%; height: 500px;margin-bottom:-140px;"></div>
-    <div id="koleksi" style="width: 100%; height: 500px;margin-bottom:-150px;"></div>
-
-  <div class="page-header">
-  <h1 style="text-align: left;margin-top: 50px">Statistik Anggota</h1>
-    <div>Perpustakaan SMPN 21 Purworejo</div>
-    <br/>
-  </div>
-
-    <p>Total Anggota Terdaftar	:	506</p>
-
-    <div id="anggota" style="width: 100%; height: 500px;margin-top: -30px; margin-bottom:-150px;"></div>
-    <div id="anggotapinjam" style="width: 100%; height: 500px;margin-top: -30px; margin-bottom:-150px;"></div>
-
-  <div class="page-header">
-  <h1 style="text-align: left;margin-top: 50px">Statistik Pengunjung</h1>
-    <div>Perpustakaan SMPN 21 Purworejo</div>
-    <br/>
-  </div>
-
-    <div id="totalkunjungan" style="width: 100%; height: 500px;margin-bottom:0px;"></div>
-    <div id="totaltipekunjungan" style="width: 100%; height: 500px;margin-bottom:50px;"></div>
-
-
-
-</div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Cordova -->
-  <!--
-  <script src="cordova.js"></script>
-  -->
-
-  <!-- Framework7 library -->
-  <script src="framework7/js/framework7.bundle.min.js"></script>
-
-  <!-- App routes -->
-  <script src="js/routes.js"></script>
-
-  <!-- Your custom app scripts -->
-  <script src="js/app.js"></script>
-
-</body>
-</html>
