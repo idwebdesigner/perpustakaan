@@ -106,6 +106,10 @@ routes = [
 
   // Page Loaders & Router
   {
+    path: '/statistik/',
+    templateUrl: './statistik.html',
+  },
+  {
     path: '/page-loader-template7/:user/:userId/:posts/:postId/',
     templateUrl: './pages/page-loader-template7.html',
   },
