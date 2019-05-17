@@ -1,9 +1,9 @@
 .todo-wrapper{
   width: 100%;
-  max-width: 90%;
+  max-width: 88%;
   margin: 20px 20px 20px 20px;
   border-radius: 4px;
-  padding: 40px 0px 30px 0px;
+  padding: 40px 0px 70px 0px;
   background-color: #ffffff;
   overflow: hidden;
   position: relative;
@@ -40,7 +40,7 @@ form label{
 
 input[type='text'] {
   border: 1px solid #ddd;
-  min-width: 70%;
+  min-width: 75%;
   transition: all ease-in 0.25s;
 }
 
@@ -66,7 +66,7 @@ input::placeholder{
   background: #ddd;
   color: #fefefe;
   border-color: #ddd;
-  min-width: 17%;
+  min-width: 10%;
   pointer-events: none;
   transition: all ease-in 0.25s;
   font-size: 2.2em;
