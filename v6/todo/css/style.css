@@ -66,7 +66,7 @@ input::placeholder{
   background: #ddd;
   color: #fefefe;
   border-color: #ddd;
-  min-width: 10%;
+  min-width: 8%;
   pointer-events: none;
   transition: all ease-in 0.25s;
   font-size: 2.2em;
@@ -76,8 +76,8 @@ input::placeholder{
 }
 
 .btn-add.active{
-  background: #6664ff;
-  border-color: #6664ff;
+  background: #c0392b;
+  border-color: #c0392b;
   pointer-events: visible;
 }
 
@@ -131,7 +131,7 @@ ul.todo-list li{
   list-style-type: none;
   display: block;
   margin: 10px 0;
-  background: #e0e8f5;
+  background: #f7d7d7;
   border-radius: 3px;
   padding-left: 38px; /* custom checkbox width + 16 */
   padding-top: 12px;
@@ -201,10 +201,10 @@ ul.todo-list li:hover .delete:after{
   left: 10px;
   top: 50%;
   transform: translateY(-50%);
-  width: 22px;
-  height: 22px;
+  width: 12px;
+  height: 12px;
   border-radius: 2px;
-  border: 1px solid #cfdcec;
+  border: 1px solid #f7d7d7;
   background-color: #fff;
 }
 
