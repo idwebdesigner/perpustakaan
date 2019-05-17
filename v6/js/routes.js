@@ -45,7 +45,7 @@ routes = [
   },
   {
     path: '/kalender/',
-    url: 'http://app.smpn21purworejo.sch.id/v6/pages/kalender.html',
+    url: './pages/kalender.html',
   },
   {
     path: '/one/',
