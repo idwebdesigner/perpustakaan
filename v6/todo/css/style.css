@@ -1,10 +1,9 @@
 .todo-wrapper{
-  width: 400px;
-  max-width: 100%;
-  min-height: 500px;
-  margin: 20px auto 40px;
+  width: 100%;
+  max-width: 80%;
+  margin: 20px 20px 20px 20px;
   border-radius: 4px;
-  padding: 40px 20px;
+  padding: 40px 20px 30px 20px;
   background-color: #ffffff;
   overflow: hidden;
   position: relative;
