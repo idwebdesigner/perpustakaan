@@ -5,16 +5,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="components/loader.css">
-    <link rel="stylesheet" href="css/style.css">
     <script src="components/loader.js"></script>
-</head>
+    <script src="js/memo.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/cssua.min.js"></script>
+    <link rel="stylesheet" href="../css/all.css">
+<style>
+
+</style>
+
+    </head>
 <body>
 
     <!-- TOP Page -->
     <div data-role="page" id="TopPage">
-        <header data-role="header" data-position="fixed" data-theme="c">
-            <h1>Monaca Memo</h1>
-            <a href="#AddPage" data-icon="plus" class="ui-btn-right">Add</a>
+        <header data-role="header" data-position="fixed" data-theme="c" style="float: right;
+    margin-right: 50px;
+    font-size: 18px;">
+            <h1></h1>
+            <a href="#AddPage"><i class="fas fa-book-reader"></i></a>
         </header>
         <section data-role="content">
             <ul id="TopListView" data-role="listview" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-split-icon="delete">
@@ -23,15 +32,15 @@
     </div>
 
     <!-- Add Memo Page -->
-    <div data-role="page" id="AddPage">
+    <div data-role="page" id="AddPage" style="">
         <header data-role="header" data-position="fixed" data-theme="c">
-            <a data-role="button" data-rel="back" data-icon="back">Back</a>
-            <h1>Add Memo</h1>
+            <a data-role="button" data-rel="back"><i class="fas fa-arrow-left"></i></a>
+            <h1></h1>
         </header>
         <section data-role="content">
-            <label for="Memo">Memo:</label>
+            <label for="Memo">Tambah Jadwal Literasiku:</label>
             <textarea id="Memo"></textarea>
-            <a data-role="button" data-icon="check" id="SaveBtn">Save</a>
+            <a data-role="button" data-icon="check" id="SaveBtn">SAVE</a>
         </section>
     </div>
 
@@ -46,9 +55,5 @@
         </section>
     </div>
 
-
-<script src="js/memo.js"></script>
-<script src="js/app.js"></script>
-<script src="js/cssua.min.js"></script>
 </body>
 </html>
