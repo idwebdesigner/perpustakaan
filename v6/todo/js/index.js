@@ -3,9 +3,9 @@ new Vue({
   data() {
     return {
       todoList: [
-        {"id":0,"title":"Go to codepen and get inspired","done":false},
-        {"id":1,"title":"Pick a project","done":false},
-        {"id":4,"title":"Create a new pen","done":true}
+        {"id":0,"title":"Mengunjungi perpustakaan","done":false},
+        {"id":1,"title":"Meminjam buku","done":false},
+        {"id":4,"title":"Menginstall aplikasi perpustakaan","done":true}
       ],
       new_todo: '',
       showComplete: false,
