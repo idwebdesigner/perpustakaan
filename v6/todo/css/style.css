@@ -66,7 +66,7 @@ input::placeholder{
   background: #ddd;
   color: #fefefe;
   border-color: #ddd;
-  min-width: 8%;
+  min-width: 6%;
   pointer-events: none;
   transition: all ease-in 0.25s;
   font-size: 2.2em;
