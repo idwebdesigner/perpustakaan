@@ -28,7 +28,9 @@
     color: #c0392b;
 }
 
-.navbar {border-bottom: 0px solid #eeeeee;background-color: #ffffff;margin-left: 10px;}
+.navbar {border-bottom: 0px solid #eeeeee;background-color: #ffffff;padding-left: 10px;}
+.navbarhome {background-color: transparent;}
+
 .tabbar-labels {border-top: 1px solid #eeeeee;background-color: #ffffff}
 .block {padding-left: 30px;padding-right: 30px}
 
@@ -267,12 +269,12 @@ ul li:last-child {
     margin-top: 20px;font-size: 14px;
 }
 .lcnama{text-align: left;margin-top: -30px}
-.ketbawah{text-align: center;margin-top: -50px; margin-bottom: 30px;font-size: 12px;}
+.ketbawah{text-align: center;margin-top: -50px; margin-bottom: 0px;font-size: 12px;}
 .pengumuman{
     margin-top: 20px;font-size:11px;
 }
 .yukcari{
-    font-size: 12px;margin-left: 10px;color: #999999;
+    font-size: 12px;margin-left: 10px;
 }
 .todo{color: #ffffff; background-color: #c0392b;opacity: 0.9; margin: 10px 0px 10px 0px;border-radius: 5px;list-style-type: none; }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
