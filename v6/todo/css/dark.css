@@ -1,0 +1,64 @@
+html,
+body,
+:not([style*="background-color:"]) {
+    background-color: rgb(0, 0, 0) !important;
+}
+html,
+body,
+:not([style*="color:"]) {
+    color: rgb(62, 55, 41) !important;
+}
+h1:not([style*="color:"]),
+h2:not([style*="color:"]),
+h3:not([style*="color:"]),
+h4:not([style*="color:"]),
+h5:not([style*="color:"]),
+h6:not([style*="color:"]) {
+    color: rgb(122, 43, 13) !important;
+}
+cite:not([style*="color:"]) {
+    color: rgb(32, 89, 47) !important;
+}
+input:not([style*="background-color:"]),
+textarea:not([style*="background-color:"]),
+button:not([style*="background-color:"]),
+[role="button"] {
+    background-color: rgb(0, 0, 0) !important;
+}
+input:not([style*="background-color:"]):hover,
+textarea:not([style*="background-color:"]):hover,
+button:not([style*="background-color:"]):hover,
+[role="button"]:hover {
+    background-color: rgb(0, 10, 19) !important;
+}
+input:not([style*="background-color:"]):active, input:not([style*="background-color:"]):focus,
+textarea:not([style*="background-color:"]):active, textarea:not([style*="background-color:"]):focus,
+button:not([style*="background-color:"]):active, button:not([style*="background-color:"]):focus,
+[role="button"]:active, [role="button"]:focus {
+    background-color: rgb(0, 13, 26) !important;
+}
+a:not([style*="color:"]) {
+    color: rgb(32, 73, 89) !important;
+}
+a:not([style*="color:"]):hover {
+    color: rgb(70, 111, 131) !important;
+}
+a:not([style*="color:"]):active, a:not([style*="color:"]):focus {
+    color: rgb(107, 149, 172) !important;
+}
+:not([style*="border-color:"]),
+::before,
+::after {
+    border-color: rgb(16, 37, 45) !important;
+}
+div:empty {
+    background-color: rgb(0, 0, 0) !important;
+}
+input::placeholder,
+textarea::placeholder {
+    color: rgb(62, 55, 41) !important;
+}
+input:not([style*="background-image:"]),
+textarea:not([style*="background-image:"]) {
+    background-image: none !important;
+}

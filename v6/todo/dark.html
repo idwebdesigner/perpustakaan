@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>todo list in Vue.js with LocalStorage </title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link disabled id="dark-reader" href="css/dark.css" rel="stylesheet" type="text/css">
+
+    <script>
+    function dark_toggle() {
+        var el1 = document.getElementById("dark-reader");
+        if(el1.disabled) {
+            el1.disabled = false;
+            localStorage.setItem("darkreader", "enabled");
+        } else {
+            el1.disabled = true;
+            localStorage.setItem("darkreader", "disabled");
+        }
+    }
+     if (localStorage.getItem("darkreader") == "enabled") {
+         document.getElementById("dark-reader").disabled = false;
+     } else {
+         document.getElementById("dark-reader").disabled = true;
+     }
+    </script>
+
+</head>
+
+<body>
+
+    <div id="app">
+    <section class="todo-wrapper">
+    <div class="content" style="margin-top:20px;">
+      <div class="page-header">
+      <h1 style="margin-bottom: 0px;
+    line-height: 1;font-family: roboto,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #1f1f1f;font-size: 21px;font-weight: 800;box-sizing: border-box;
+    padding: 0;
+    margin: 0;">Jadwal Literasiku</h1>
+        <div>Jadikan Buku Sahabatmu!</div>
+    <div href="javascript:void(0)" onclick="dark_toggle();return false;" style="margin-left: 50px;margin-top: 10px;">Mode Gelap</div>
+        <br/>
+    </div>
+    </div>
+    </section>
+  </div>
+
+  <script src='../js/vue.min.js'></script>
+
+
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
