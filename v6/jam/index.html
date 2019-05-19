@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>vuejs + sass Clock</title>
+
+
+
+      <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+  <div class="container">
+    <template id="app-template">
+        <div>
+            <h1>{{msg}}</h1>
+        </div>
+    </template>
+
+	<template id="clock-min">
+		<div id="min"></div>
+	</template>
+	<template id="clock-hour">
+		<div id="hour"></div>
+	</template>
+	<template id="clock-sec">
+		<div id="sec"></div>
+	</template>
+	<template id="clock-time">
+		<div id="time">{{myMessage}}</div>
+	</template>
+
+    <template id="clock-template">
+        <div id="clock">
+        	  <div class="hour">
+        	    <div class="min"></div>
+        	    <div class="min"></div>
+        	    <div class="min"></div>
+        	    <div class="min"></div>
+        	    <div class="min"></div>
+        	  </div>
+        	  <div class="hour">
+        	    <div class="min"></div>
+        	    <div class="min"></div>
+        	    <div class="min"></div>
+        	    <div class="min"></div>
+        	    <div class="min"></div>
+        	  </div>
+        	  <min-component v-ref:min></min-component>
+        	  <hour-component v-ref:hour></hour-component>
+        	  <sec-component v-ref:sec></sec-component>
+        	  <ol>
+        	    <li></li>
+        	    <li></li>
+        	    <li></li>
+        	    <li></li>
+        	    <li></li>
+        	    <li></li>
+        	    <li></li>
+        	    <li></li>
+        	    <li></li>
+        	    <li></li>
+        	    <li></li>
+        	    <li></li>
+        	  </ol>
+        	</div>
+    </template>
+
+    <clock v-ref:clock></clock>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.15/vue.min.js'></script>
+
+
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
