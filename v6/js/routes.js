@@ -21,7 +21,7 @@ routes = [
   },
  {
     path: '/chat/',
-    url: 'http://app.smpn21purworejo.sch.id/v6/pages/chat.html',
+    url: './pages/chat.html',
   },
  {
     path: '/jam/',
