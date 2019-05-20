@@ -220,7 +220,8 @@ body {
   transition: all .5s;
 }
 #time:after {
-  content: "\A";
+  content: "SMP N 21 PURWOREJO";
+  font-size: 8px;
   position: absolute;
   width: 100px;
   height: 30px;
