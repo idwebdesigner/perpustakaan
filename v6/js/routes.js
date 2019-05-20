@@ -41,7 +41,7 @@ routes = [
   },
   {
     path: '/galeri-kartu/',
-    url: 'http://app.smpn21purworejo.sch.id/v6/pages/galeri-kartu.html',
+    url: './pages/galeri-kartu.html',
   },
   {
     path: '/istilah/',
@@ -69,43 +69,43 @@ routes = [
   },
   {
     path: '/blank1/',
-    url: 'http://app.smpn21purworejo.sch.id/v6/pages/blank1.html',
+    url: 'http://app.smpn21purworejo.sch.id/v6/pages/draft1.html',
   },
   {
     path: '/blank2/',
-    url: 'http://app.smpn21purworejo.sch.id/v6/pages/blank2.html',
+    url: 'http://app.smpn21purworejo.sch.id/v6/pages/draft2.html',
   },
   {
     path: '/blank3/',
-    url: 'http://app.smpn21purworejo.sch.id/v6/pages/blank3.html',
+    url: 'http://app.smpn21purworejo.sch.id/v6/pages/draft3.html',
   },
   {
     path: '/blank4/',
-    url: 'http://app.smpn21purworejo.sch.id/v6/pages/blank4.html',
+    url: 'http://app.smpn21purworejo.sch.id/v6/pages/draft4.html',
   },
   {
     path: '/blank5/',
-    url: 'http://app.smpn21purworejo.sch.id/v6/pages/blank5.html',
+    url: 'http://app.smpn21purworejo.sch.id/v6/pages/draft5.html',
   },
   {
     path: '/blank6/',
-    url: 'http://app.smpn21purworejo.sch.id/v6/pages/blank6.html',
+    url: 'http://app.smpn21purworejo.sch.id/v6/pages/draft6.html',
   },
   {
     path: '/blank7/',
-    url: 'http://app.smpn21purworejo.sch.id/v6/pages/blank7.html',
+    url: 'http://app.smpn21purworejo.sch.id/v6/pages/draft7.html',
   },
   {
     path: '/blank8/',
-    url: 'http://app.smpn21purworejo.sch.id/v6/pages/blank8.html',
+    url: 'http://app.smpn21purworejo.sch.id/v6/pages/draft8.html',
   },
   {
     path: '/blank9/',
-    url: 'http://app.smpn21purworejo.sch.id/v6/pages/blank9.html',
+    url: 'http://app.smpn21purworejo.sch.id/v6/pages/draft9.html',
   },
   {
     path: '/blank10/',
-    url: 'http://app.smpn21purworejo.sch.id/v6/pages/blank10.html',
+    url: 'http://app.smpn21purworejo.sch.id/v6/pages/draft10.html',
   },
 
   // Page Loaders & Router
