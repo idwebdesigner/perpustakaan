@@ -260,7 +260,7 @@ ul li:last-child {
     color: #c0392b;position: fixed;margin-top: -15px; margin-left: 30px;opacity: 0.5
 }
 .kotakcari{
-    background-color: #ffffff;opacity: 0.9; border: 1px solid #eeeeee;margin: 50px 30px 0px 30px;box-shadow: 1px 1px 4px rgba(0, 0, 0, .1);border-radius: 5px;
+    background-color: #ffffff;opacity: 0.9; border: 1px solid #eeeeee;margin: 70px 30px 0px 30px;box-shadow: 1px 1px 4px rgba(0, 0, 0, .1);border-radius: 5px;
 }
 .kolomnama{
     background-color: #eeeeee;margin-top: -30px;padding: 30px 20px 20px 20px;border-radius: 5px;
@@ -272,6 +272,10 @@ ul li:last-child {
     margin-top: 20px;font-size: 14px;
 }
 .lcnama{text-align: left;margin-top: -30px}
+.lcnama::after {
+    font-family: "Font Awesome 5 Free"; font-style: normal; font-size: 12px; content: "  \f304";
+
+}
 .ketbawah{text-align: center;margin-top: -50px; margin-bottom: 0px;font-size: 12px;}
 .pengumuman{
     margin-top: 20px;font-size:11px;
