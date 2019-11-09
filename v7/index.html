@@ -29,6 +29,59 @@
   <script type="text/javascript" src="js/jquery.js"></script>
   <link rel="stylesheet" href="todo/css/todo.css">
 
+  <script type="text/javascript" src="js/localstorage.js"></script>
+  <script type="text/javascript">//<![CDATA[
+
+    window.addEvent('load', function() {
+
+  function handleFileSelect(evt) {
+    var files = evt.target.files; // FileList object
+
+    // Loop through the FileList and render image files as thumbnails.
+    for (var i = 0, f; f = files[i]; i++) {
+
+      // Only process image files.
+      if (!f.type.match('image.*')) {
+        continue;
+      }
+
+      var reader = new FileReader();
+
+      // Closure to capture the file information.
+      reader.onload = (function(theFile) {
+        return function(e) {
+          // Render thumbnail.
+          var span = document.createElement('span');
+          span.innerHTML = ['<img class="thumb" src="', e.target.result,
+                            '" title="', escape(theFile.name), '"/>'].join('');
+
+          document.getElementById('list').insertBefore(span, null);
+          localStorage.setItem('img', e.target.result);
+        };
+      })(f);
+
+      // Read in the image file as a data URL.
+      reader.readAsDataURL(f);
+    }
+  }
+
+  document.getElementById('files').addEventListener('change', handleFileSelect, false);
+
+
+  if(localStorage.img) {
+
+         var span = document.createElement('span');
+          span.innerHTML += ['<img class="thumb" src="', localStorage.img,
+                            '" title="test"/>'].join('');
+
+          document.getElementById('list').insertBefore(span, null);
+
+    }
+
+    });
+
+  //]]></script>
+
 </head>
 <body>
   <div id="app">
@@ -54,9 +107,9 @@
                 Perpustakaan TOP. TOP adalah akronim dari Perpustakaan SMPN 21 <a style="color: red" href="/profil/">"Twenty One Purworejo"</a>
 
                 <div class="container features-page">
-<a href="/berita/"><i class="far fa-file"></i> Library News <i class="fa fa-angle-right"></i></a>
+                <a href="/berita/"><i class="far fa-file"></i> Library News <i class="fa fa-angle-right"></i></a>
 
-</div>
+                </div>
 
                 <br/>Dibuat dengan <i style="color: red;" class="fas fa-heart"></i> di Perpustakaan<br/>SMPN 21 Purworejo</div>
           </div>
@@ -111,9 +164,11 @@
 
   <div class="block kotakcari">
 
-    <div href="#" data-popup="#my-popup1" class="page-header kolomnama popup-open">
+    <div href="#" data-popup="#my-popup1" class="page-header popup-open" style="align-content: center">
+        <output id="list" style="position:relative; " ><img class="thumb" src="images/icon.png" title="test" style="position: relative; margin-bottom: -85px"></output>
         <p class="greeting"></p>
         <h1 id="val" class="lcnama"></h1>
+
     </div>
 
     <p class="half-bottom inginbaca">Ingin baca buku apa hari ini?</p>
@@ -126,6 +181,7 @@
         <label class="pengumuman">Library News:</label>
 <div id ="ambil">Sepertinya kamu tidak terhubung internet?</div>
       </div><br/>
+
 </div>
 
 <div class="content block" style="margin-top: -0px;background-color: transparent">
@@ -195,6 +251,12 @@ Dibuat dengan <i style="color: red;" class="fas fa-heart"></i> di Perpustakaan<b
                   </div>
                 </div>
 
+                <h6>Ubah foto profil</h6>
+                <input type="file" id="files" name="files[]" multiple="">
+                <output id="list"><span><img class="thumb" src="images/icon.png" title="test"></span></output>
+
+
+                <br/><br/>
                 <h6>Pengaturan mode gelap</h6>
                 <div>Mode gelap (dark mode) adalah pilihan untuk mengubah tampilan agar berwarna gelap. Aktifkan fitur ini untuk menerapkan skema warna gelap di aplikasi.</div>
                 <br/>
@@ -202,7 +264,6 @@ Dibuat dengan <i style="color: red;" class="fas fa-heart"></i> di Perpustakaan<b
 
 
                 <div href="javascript:void(0)" onclick="dark_toggle();return false;location.reload();" style="margin-left: 50px;margin-top: -19px;">Mode Gelap</div>
-
 
 
             </div>
