@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!--
+  Customize this policy to fit your own app's needs. For more guidance, see:
+      https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+  Some notes:
+      * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+      * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+      * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+          * Enable inline JS: add 'unsafe-inline' to default-src
+  -->
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <title>My App</title>
+
+  <link rel="stylesheet" href="framework7/css/framework7.bundle.min.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/wave.css">
+  <link disabled id="dark-reader" href="css/dark.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <link rel="stylesheet" href="todo/css/todo.css">
+
+</head>
+<body>
+  <div id="app">
+
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar"></div>
+    <!-- Left panel with cover effect-->
+    <div class="panel panel-left panel-reveal">
+      <div class="view">
+        <div class="page">
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="title"></div>
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="block">
+                Developer:<br/>
+                dev@designer.web.id<br/><br/>
+                Dibuat dengan <i style="color: red;" class="fas fa-heart"></i> di Perpustakaan<br/>SMPN 21 Purworejo</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Views/Tabs container -->
+    <div class="views tabs safe-areas">
+      <!-- Tabbar for switching views-tabs -->
+      <div class="toolbar tabbar-labels toolbar-bottom" style="border: none;">
+        <div class="toolbar-inner">
+          <a href="#view-home" class="tab-link tab-link-active">
+            <i class="fas fa-home"></i>
+            <span class="tabbar-label">Beranda</span>
+          </a>
+          <a href="#view-literasi" class="tab-link">
+            <i class="fas fa-scroll"></i>
+            <span class="tabbar-label">Literasiku</span>
+          </a>
+          <a href="#view-biblio" class="tab-link">
+            <i class="fas fa-book-reader"></i>
+            <span class="tabbar-label">Biblio</span>
+          </a>
+        </div>
+      </div>
+      <!-- Your main view/tab, should have "view-main" class. It also has "tab-active" class -->
+      <div id="view-home" class="view view-main tab tab-active">
+        <!-- Page, data-name contains page name which can be used in page callbacks -->
+        <div class="page" data-name="home">
+          <!-- Top Navbar -->
+          <div class="navbar" style="background-color: transparent">
+            <div class="navbar-inner" style="background-color: transparent">
+              <div class="left" style="background-color: transparent">
+                <a href="#" class="link panel-open" data-panel="left" style="background-color: transparent">
+                <img src="images/21.png" width="30px;" style="margin-left: 10px;background-color: transparent">
+                </a>
+              </div>
+              <div class="title sliding" style="font-size: 16px;margin-left: -0px;background-color: transparent"><img src="images/header.png" width="135px;" style="float: left;background-color: transparent">
+              </div>
+              <div class="right" style="margin-right: 15px;font-size: 18px;background-color: transparent !important">
+                <a href="#" data-popup="#my-popup1" class="link icon-only popup-open" data-panel="right" style="color: #ffffff;background-color: transparent">
+                  <i class="far fa-user" style="background-color: transparent"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Scrollable page content-->
+          <div class="page-content">
+
+  <div class="waveWrapper waveAnimation">
+  <div class="waveWrapperInner bgTop">
+    <div class="wave waveTop lazy lazy-fade-in"></div>
+  </div>
+  <div class="waveWrapperInner bgMiddle">
+    <div class="wave waveMiddle lazy lazy-fade-in"></div>
+  </div>
+  <div class="waveWrapperInner bgBottom">
+    <div class="wave waveBottom lazy lazy-fade-in"></div>
+  </div>
+  </div>
+  <div><img src="images/pattern.png" class="pattern lazy lazy-fade-in"></div>
+  <div class="judulsekolah" style="background-color: transparent">SMPN 21 Purworejo</div>
+
+  <div class="block kotakcari">
+
+    <div class="page-header kolomnama">
+        <p class="greeting"></p>
+        <h1 id="val" class="lcnama"></h1>
+    </div>
+
+    <p class="half-bottom inginbaca">Ingin baca buku apa hari ini?</p>
+
+<div href="#" data-popup="#my-popup2" class="link icon-only popup-open" class="page-header" style="background-color: #ffffff;padding: 13px 20px 13px 20px;border: 1px solid #dddddd;box-shadow: 1px 1px 4px rgba(0, 0, 0, .1);border-radius: 5px;width: 100%;height: 40px;"><span class="carispan" style="width:100%;background-color: transparent"><i class="fas fa-search" style="background-color: transparent;color: #c0392b;"></i><a class="yukcari" style="background-color: transparent;color: #c0392b !important">Yuk, cari disini...</a></span>
+</div>
+
+
+      <div class="input-field">
+        <label class="pengumuman">Pengumuman:</label>
+<div id ="ambil">Sepertinya kamu tidak terhubung internet?</div>
+      </div><br/>
+</div>
+
+<div class="content block" style="margin-top: -0px;background-color: transparent">
+<div class="container features-page" style="background-color: transparent">
+
+
+
+<a href="#" data-popup="#my-popup3" class="link icon-only popup-open" style="background-color: transparent;color: #c0392b;"><i class="fas fa-chart-line" style="background-color: transparent"></i> Laporan dan Statistik <i class="fa fa-angle-right" style="background-color: transparent"></i></a>
+<a href="/galeri-kartu/" style="background-color: transparent;color: #c0392b;"><i class="fas fa-id-card-alt" style="background-color: transparent"></i> Kartu Anggota <i class="fa fa-angle-right" style="background-color: transparent"></i></a>
+</div>
+</div>
+
+<div class="ketbawah">
+<p class="half-bottom">
+Dibuat dengan <i style="color: red;" class="fas fa-heart"></i> di Perpustakaan<br/>SMPN 21 Purworejo
+</p>
+</div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Literasi View -->
+      <div id="view-literasi" class="view tab">
+        <!-- Literasi page will be loaded here dynamically from /literasi/ route -->
+      </div>
+
+      <!-- Settings View -->
+      <div id="view-biblio" class="view tab">
+        <!-- Settings page will be loaded here dynamically from /settings/ route -->
+      </div>
+    </div>
+
+    <!-- Popup -->
+    <div class="popup" id="my-popup1">
+      <div class="view">
+        <div class="page">
+          <div class="navbar" style="background-color: #ffffff">
+            <div class="navbar-inner" style="padding-left: 20px;">
+              <div class="right" style="position: relative;margin-right: 15px;">
+                <a onclick="location.reload();" href="#" class="link popup-close"><i class="fas fa-times"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="block">
+
+                <div class="container">
+                  <div class="page-header">
+                  <h1 style="text-align: left">Pengaturan</h1>
+                    <div>Personalisasi aplikasi PerpustakaanTOP mu!</div>
+                    <br/>
+                    <div class="alert alert-danger" id="ooh">Pemustaka</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <h3><div class="alert alert-info" id="val2"><h5>Pemustaka</h5></div></h3>
+
+                      <form action="#" class="form-inline">
+                        <div class="form-group">
+                          <input style="width: 100%;padding: 12px 20px;margin: 8px 0;box-sizing: border-box;border: 1px solid #eeeeee" type="text" name="save" id="text" class="form-control" placeholder="Nama Lengkap...">
+                        </div>
+                        <button id="set" class="button button-fill">Ubah nama</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+                <h6>Pengaturan mode gelap</h6>
+                <div>Mode gelap (dark mode) adalah pilihan untuk mengubah tampilan agar berwarna gelap. Aktifkan fitur ini untuk menerapkan skema warna gelap di aplikasi.</div>
+                <br/>
+                <label href="javascript:void(0)" onclick="dark_toggle();return false;" title="Toggle night mode" class="toggle toggle-init"><input type="checkbox"><span class="toggle-icon"></span></label>
+
+
+                <div href="javascript:void(0)" onclick="dark_toggle();return false;location.reload();" style="margin-left: 50px;margin-top: -19px;">Mode Gelap</div>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup" id="my-popup2">
+      <div class="view">
+        <div class="page">
+          <div class="navbar" style="background-color: #ffffff">
+            <div class="navbar-inner" style="padding-left: 20px;">
+              <div class="right" style="position: relative;margin-right: 15px;">
+                <a href="#" class="link popup-close"><i class="fas fa-times"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="block">
+
+            <div class="container">
+                  <div class="page-header">
+                  <h1 style="text-align: left">Pencarian Buku</h1>
+                    <div>Masukkan kata kunci judul, pengarang, atau penerbit.</div>
+                    <br/>
+                  </div>
+              <div class="row">
+                <div class="col s12">
+                  <div class="input-field">
+                    <input type="text" id="search" autofocus="autofocus" autocomplete="off" placeholder="Pencarian buku...">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container" style="margin-top: -20px">
+                <!-- Results --><br/>
+                <div id="results">
+                <h6>Panduan pencarian</h6><br/>
+                <div><li>Hasil pencarian akan otomatis muncul berdasarkan kata kunci.</li><li>Klik judul buku untuk mengakses OPAC dan melihat ketersediaan buku</li><li>Database terakhir diperbarui 14/05/2019. Pencarian dapat menemukan <a href="#" class="link popup-close">480 judul buku</a> dari total keseluruhan judul buku: 1080, atau total eksemplar/kopi:	10436 yang ada dalam buku induk perpustakaan.</li><li>Periksa pembaruan secara berkala</li></div>
+                <br/>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup" id="my-popup3">
+      <div class="view">
+        <div class="page">
+          <div class="navbar" style="background-color: #ffffff">
+            <div class="navbar-inner" style="padding-left: 20px;">
+              <div class="right" style="position: relative;margin-right: 15px;">
+                <a href="#" class="link popup-close"><i class="fas fa-times"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="block">
+
+                <div class="container">
+                  <div class="page-header">
+                  <h1 style="text-align: left">Statistik</h1>
+                    <div>Perpustakaan SMPN 21 Purworejo</div>
+                  </div>
+                </div>
+
+                <h6>Data disajikan interaktif</h6>
+                <p class="half-bottom">
+                Laporan statistik koleksi perpustakaan, statistik peminjaman, dan berbagai aktivitas pengunjung lainnya. Data diperbaharui secara berkala.
+                </p>
+                <p class="user-list-follow">
+                <a href="statistik.html" class="followkita external">Lihat statistik&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-right"></i></a>
+                </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Cordova -->
+  <!--
+  <script src="cordova.js"></script>
+  -->
+
+  <!-- Framework7 library -->
+  <script src="framework7/js/framework7.bundle.min.js"></script>
+
+  <!-- App routes -->
+  <script src="js/routes.js"></script>
+
+  <!-- Your custom app scripts -->
+  <script src="js/app.js"></script>
+
+  <script src='js/materialize.min.js'></script>
+  <script src='js/fuse.min.js'></script>
+  <script  src="js/databuku.js"></script>
+
+</body>
+</html>
