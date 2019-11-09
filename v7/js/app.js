@@ -123,8 +123,6 @@ function dark_toggle() {
 
 
 
-
-
 $(document).ready(function(){
    $('#ambil').load("http://app.smpn21purworejo.sch.id/v6/pages/pengumuman.html");
 });
