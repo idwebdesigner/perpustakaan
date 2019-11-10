@@ -376,6 +376,7 @@ ul li:last-child {
   background-image:url(../images/.png);
   background-color: beige;
   border-radius: 8px;
+  height: 150px;
 }
 
 .terbaru {
@@ -386,6 +387,7 @@ ul li:last-child {
   background-image:url(../images/.png);
   background-color: antiquewhite ;
   border-radius: 8px;
+  height: 150px;
 }
 
 .fiksi {
@@ -396,6 +398,7 @@ ul li:last-child {
   background-image:url(../images/.png);
   background-color: beige;
   border-radius: 8px;
+  height: 150px;
 }
 
 .pilihan {
@@ -406,6 +409,7 @@ ul li:last-child {
   background-image:url(../images/.png);
   background-color: antiquewhite ;
   border-radius: 8px;
+  height: 150px;
 }
 
 .ebook {
@@ -416,6 +420,7 @@ ul li:last-child {
   background-image:url(../images/.png);
   background-color: beige;
   border-radius: 8px;
+  height: 150px;
 }
 
 .referensi {
@@ -426,6 +431,7 @@ ul li:last-child {
   background-image:url(../images/.png);
   background-color: antiquewhite ;
   border-radius: 8px;
+  height: 150px;
 }
 
 .no-scrollbar {
