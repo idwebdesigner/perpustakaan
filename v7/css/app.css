@@ -347,7 +347,7 @@ ul li:last-child {
   width: 10px;
 }
 
-ul {
+.hs > ul {
   list-style: none;
   padding: 0;
 }
@@ -363,9 +363,78 @@ ul {
   padding: calc(var(--gutter) / 2 * 1.5);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #c0392b;
+  border-radius: 8px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.terlaris {
+  scroll-snap-align: center;
+  padding: calc(var(--gutter) / 2 * 1.5);
+  display: flex;
+  flex-direction: column;
+  background-image:url(../images/.png);
+  background-color: beige;
+  border-radius: 8px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.terbaru {
+  scroll-snap-align: center;
+  padding: calc(var(--gutter) / 2 * 1.5);
+  display: flex;
+  flex-direction: column;
+  background-image:url(../images/.png);
+  background-color: antiquewhite ;
+  border-radius: 8px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.rekomendasi {
+  scroll-snap-align: center;
+  padding: calc(var(--gutter) / 2 * 1.5);
+  display: flex;
+  flex-direction: column;
+  background-image:url(../images/.png);
+  background-color: beige;
+  border-radius: 8px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.pilihan {
+  scroll-snap-align: center;
+  padding: calc(var(--gutter) / 2 * 1.5);
+  display: flex;
+  flex-direction: column;
+  background-image:url(../images/.png);
+  background-color: antiquewhite ;
+  border-radius: 8px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.ebook {
+  scroll-snap-align: center;
+  padding: calc(var(--gutter) / 2 * 1.5);
+  display: flex;
+  flex-direction: column;
+  background-image:url(../images/.png);
+  background-color: beige;
+  border-radius: 8px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.referensi {
+  scroll-snap-align: center;
+  padding: calc(var(--gutter) / 2 * 1.5);
+  display: flex;
+  flex-direction: column;
+  background-image:url(../images/.png);
+  background-color: antiquewhite ;
   border-radius: 8px;
   margin-left: 10px;
   margin-right: 10px;
