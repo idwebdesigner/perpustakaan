@@ -306,3 +306,66 @@ ul li:last-child {
     margin: 20px 5px -0px 0;
     border-radius: 50px;
 }
+
+:root {
+  --gutter: 20px;
+}
+
+.app {
+  padding: var(--gutter) 0;
+  display: grid;
+  grid-gap: var(--gutter) 0;
+  grid-template-columns: var(--gutter) 1fr var(--gutter);
+  align-content: start;
+}
+
+.app > * {
+  grid-column: 2 / -2;
+}
+
+.app > .full {
+  grid-column: 1 / -1;
+}
+
+.hs {
+  display: grid;
+  grid-gap: calc(var(--gutter) / 2);
+  grid-template-columns: repeat(6, calc(50% - var(--gutter) * 2));
+  grid-template-rows: minmax(150px, 1fr);
+
+  overflow-x: scroll;
+  scroll-snap-type: x proximity;
+  padding-bottom: calc(.75 * var(--gutter));
+  margin-bottom: calc(-.25 * var(--gutter));
+}
+
+
+
+
+.app {
+  width: 120%;
+  margin-left: -20px;
+  overflow-y: scroll;
+}
+
+.hs > li,
+.item {
+  padding: calc(var(--gutter) / 2 * 1.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.terlaris {
+  padding: calc(var(--gutter) / 2 * 1.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  height: 200px;
+  border-radius: 8px;
+}
