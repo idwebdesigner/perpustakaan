@@ -365,7 +365,62 @@ ul li:last-child {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: aqua;
+  background-color:cadetblue ;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.terbaru {
+  padding: calc(var(--gutter) / 2 * 1.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: blueviolet;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.rekomendasi {
+  padding: calc(var(--gutter) / 2 * 1.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:fuchsia;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.pilihan1 {
+  padding: calc(var(--gutter) / 2 * 1.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: chartreuse;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.pilihan2 {
+  padding: calc(var(--gutter) / 2 * 1.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: deeppink;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.referensi {
+  padding: calc(var(--gutter) / 2 * 1.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: darksalmon;
   height: 200px;
   border-radius: 8px;
 }
