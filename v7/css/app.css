@@ -353,7 +353,7 @@ ul li:last-child {
 }
 
 .app {
-  margin-left: -30px;
+  margin-left: -20px;
   margin-right: -30px;
 }
 
@@ -364,7 +364,7 @@ ul li:last-child {
   display: flex;
   flex-direction: column;
   border-radius: 8px;
-  margin-left: 10px;
+  margin-left: 0px;
   margin-right: 10px;
 }
 
@@ -376,8 +376,6 @@ ul li:last-child {
   background-image:url(../images/.png);
   background-color: beige;
   border-radius: 8px;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .terbaru {
@@ -388,8 +386,6 @@ ul li:last-child {
   background-image:url(../images/.png);
   background-color: antiquewhite ;
   border-radius: 8px;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .rekomendasi {
@@ -400,8 +396,6 @@ ul li:last-child {
   background-image:url(../images/.png);
   background-color: beige;
   border-radius: 8px;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .pilihan {
@@ -412,8 +406,6 @@ ul li:last-child {
   background-image:url(../images/.png);
   background-color: antiquewhite ;
   border-radius: 8px;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .ebook {
@@ -424,8 +416,6 @@ ul li:last-child {
   background-image:url(../images/.png);
   background-color: beige;
   border-radius: 8px;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .referensi {
@@ -436,8 +426,6 @@ ul li:last-child {
   background-image:url(../images/.png);
   background-color: antiquewhite ;
   border-radius: 8px;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .no-scrollbar {
