@@ -124,7 +124,7 @@ function dark_toggle() {
 
 
 $(document).ready(function(){
-   $('#ambil').load("http://app.smpn21purworejo.sch.id/v6/pages/pengumuman.html");
+   $('#ambil').load("http://app.smpn21purworejo.sch.id/v7/pages/pengumuman.html");
 });
 
    function onBackKeyDown() {
