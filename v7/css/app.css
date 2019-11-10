@@ -333,7 +333,7 @@ ul li:last-child {
   grid-template-columns: 10px;
   grid-template-rows: minmax(150px, 1fr);
   grid-auto-flow: column;
-  grid-auto-columns: calc(40% - var(--gutter) * 2);
+  grid-auto-columns: calc(45% - var(--gutter) * 2);
 
   overflow-x: scroll;
   scroll-snap-type: x proximity;
