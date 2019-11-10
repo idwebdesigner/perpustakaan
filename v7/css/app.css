@@ -365,7 +365,8 @@ ul li:last-child {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color:cadetblue ;
+  background-color: cadetblue;
+  background-image: url(../images/);
   height: 200px;
   border-radius: 8px;
 }
@@ -377,6 +378,7 @@ ul li:last-child {
   justify-content: center;
   align-items: center;
   background-color: blueviolet;
+  background-image: url(../images/);
   height: 200px;
   border-radius: 8px;
 }
