@@ -388,7 +388,7 @@ ul li:last-child {
   border-radius: 8px;
 }
 
-.rekomendasi {
+.fiksi {
   scroll-snap-align: center;
   padding: calc(var(--gutter) / 2 * 1.5);
   display: flex;
