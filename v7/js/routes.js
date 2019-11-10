@@ -68,44 +68,28 @@ routes = [
     url: './pages/statistik.html',
   },
   {
-    path: '/blank1/',
-    url: 'http://app.smpn21purworejo.sch.id/v7/draft/draft1.html',
+    path: '/koleksi-terlaris/',
+    url: './pages/koleksi-terlaris.html',
   },
   {
-    path: '/blank2/',
-    url: 'http://app.smpn21purworejo.sch.id/v7/draft/draft2.html',
+    path: '/koleksi-terbaru/',
+    url: './pages/koleksi-terbaru.html',
   },
   {
-    path: '/blank3/',
-    url: 'http://app.smpn21purworejo.sch.id/v7/draft/draft3.html',
+    path: '/koleksi-fiksi/',
+    url: './pages/koleksi-fiksi.html',
   },
   {
-    path: '/blank4/',
-    url: 'http://app.smpn21purworejo.sch.id/v7/draft/draft4.html',
+    path: '/koleksi-pilihan/',
+    url: './pages/koleksi-pilihan.html',
   },
   {
-    path: '/blank5/',
-    url: 'http://app.smpn21purworejo.sch.id/v7/draft/draft5.html',
+    path: '/koleksi-ebook/',
+    url: './pages/koleksi-ebook.html',
   },
   {
-    path: '/blank6/',
-    url: 'http://app.smpn21purworejo.sch.id/v7/draft/draft6.html',
-  },
-  {
-    path: '/blank7/',
-    url: 'http://app.smpn21purworejo.sch.id/v7/draft/draft7.html',
-  },
-  {
-    path: '/blank8/',
-    url: 'http://app.smpn21purworejo.sch.id/v7/draft/draft8.html',
-  },
-  {
-    path: '/blank9/',
-    url: 'http://app.smpn21purworejo.sch.id/v7/draft/draft9.html',
-  },
-  {
-    path: '/blank10/',
-    url: 'http://app.smpn21purworejo.sch.id/v7/draft/draft10.html',
+    path: '/koleksi-referensi/',
+    url: './pages/koleksi-referensi.html',
   },
 
   // Page Loaders & Router
